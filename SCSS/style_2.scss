@@ -33,7 +33,7 @@
     header
     {
         width: 99%;
-        height: 63px;
+        height: 50px;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
@@ -53,13 +53,9 @@
         font-size: 1.06em;
     }
 
-    #nav_2{
-
-    }
-
     #nav_2 img{
         height: 1.875em;
-        width: 100%;
+        width: 85%;
     }
 
     #section_1
@@ -146,10 +142,8 @@
     section article
     {
         margin-left: 5%;
-        margin-bottom: 10px;
+        margin-bottom: 2%;
         width: 90%;
-        height: 60px;
-        margin: auto;
         border: 0px black solid;
         border-radius: 0.75em;
         background-color: white;
@@ -160,9 +154,9 @@
     {
         margin-bottom: 30px;
         width: 100%;
-        height: 250px;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
     }
     .prix
     {   
@@ -183,10 +177,12 @@
     button
     {
         border-radius: 5em;
-        height: 51px;
-        width: 186px;
+        height: 50%;
+        width: 50%;
+        max-width: 250px;
         margin:auto;
         color: white;
+        font-weight: bold;
         background: linear-gradient(to bottom right,#FF79DA, #9356DC);
         box-shadow: -3px 8px 10px #C5C5C5;
         border: 0;
@@ -231,4 +227,13 @@
         margin-right: 5px;
     }
 
+    #partenariat
+    {
+        font-weight: bold;
+    }
+
+    #proposer
+    {
+        font-weight: bold;
+    }
 }
