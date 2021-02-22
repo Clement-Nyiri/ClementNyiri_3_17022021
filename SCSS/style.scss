@@ -1,39 +1,5 @@
-.container{
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-around;
-}
-
-.btn {
-    margin-top: 20px;
-    background-color: pink;
-    height: 40px;
-    width: 130px;
-    font-size: 1.5em;
-    text-align: center;
-    vertical-align: center;
-    color: white;
-    &:hover + .box {
-        transform: scale(1) rotate(0deg); 
-    span {
-            transform: translateY(0);
-        }
-    }
-}
-.box { 
-    margin-left: 25px;
-    height: 100px;
-    width: 100px;
-    background-color: lightblue;
-    text-align: center;
-    color: white;
-   overflow: hidden;
-   transform: scale(.1) rotate(90deg);
-   transition: transform 330ms ease-in-out;
-span {
-      transform: translateY(250%);
-      transition: transform 280ms ease-out 50ms;
-      display: block;
-
-    } 
+@font-face{
+    font-family: roboto;
+    src: url(polices/Roboto/Roboto-Regular.ttf);
+    font-weight: normal;
 }
