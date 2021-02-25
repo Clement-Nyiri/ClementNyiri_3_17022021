@@ -115,6 +115,10 @@
         border: 0;
         margin-bottom: 20%;
         margin-top: 5%;
+        &:hover{
+        	background: linear-gradient(to bottom right, #ff8ee0, #a05def);
+        	box-shadow: -3px 6px 10px #A0A0A0;
+        }
     }
 
     #section_2 /*Section 2*/
@@ -220,22 +224,35 @@
     	margin-bottom: -12px;
     	align-self: flex-start;
     	font-size: 1.1em;
+    	width: 80%;
     }
 
     #section_3 p
     {
     	margin-left: 4%;
     	font-size: 1em;
+    	width: 80%;
     }
+
+    $cd-btn-end: linear-gradient(to top, #FF79DA, #9356DC);
 
     #section_3 i
     {	
+    	display: inline-block;
     	font-size: 1.5em;
     	position: relative;
-    	left: 85%;
+    	left: 100%;
     	bottom: 50px;
+    	cursor: pointer;
+    	background-color: white;
+    	box-shadow: 0 200px 100px -100px white inset; 
+    	transition: box-shadow 700ms;
+    	&:active {
+    		background-color: #FF79DA;
+    		box-shadow: 0 200px 100px -200px #9356DC inset;
+    	}
     }
-	
+
 	footer /* Pied de page */
     {
         display: flex;

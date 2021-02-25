@@ -116,7 +116,8 @@
     border: 0px black solid;
     border-radius: 0.75em;
     background-color: white;
-    box-shadow: -5px 5px 5px #e7e7e7; }
+    box-shadow: -5px 5px 5px #e7e7e7;
+    overflow: hidden; }
 
   section {
     margin-bottom: 30px;
@@ -148,6 +149,9 @@
     background: linear-gradient(to bottom right, #FF79DA, #9356DC);
     box-shadow: -3px 8px 10px #C5C5C5;
     border: 0; }
+    button:hover {
+      background: linear-gradient(to bottom right, #ff8ee0, #a05def);
+      box-shadow: -3px 6px 10px #A0A0A0; }
 
   footer {
     display: flex;
