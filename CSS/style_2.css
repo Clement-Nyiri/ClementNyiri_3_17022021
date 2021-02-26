@@ -139,6 +139,7 @@
     height: 100px; }
 
   button {
+    font-family: roboto;
     border-radius: 5em;
     height: 50%;
     width: 50%;
