@@ -219,6 +219,11 @@
     	object-fit: cover;
     }
 
+    .nouveaute img
+    {
+    	margin-top: -30px;
+    }
+
     #section_3 h3
     {
     	margin-left: 4%;
@@ -235,7 +240,22 @@
     	width: 80%;
     }
 
-    $cd-btn-end: linear-gradient(to top, #FF79DA, #9356DC);
+	.etiquette
+	{
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-weight: bold;
+		font-size: 0.9em;
+		width: 79px;
+		height: 29px;
+		left: 70%;
+		top: 15px;
+		border-radius: 2px;
+		color: #008766;
+		background-color: #99e2d0;
+	}
 
     .coeur
     {	

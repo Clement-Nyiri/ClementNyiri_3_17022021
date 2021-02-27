@@ -169,6 +169,9 @@
     border-radius: 10px 10px 0 0;
     object-fit: cover; }
 
+  .nouveaute img {
+    margin-top: -30px; }
+
   #section_3 h3 {
     margin-left: 4%;
     margin-bottom: -12px;
@@ -180,6 +183,21 @@
     margin-left: 4%;
     font-size: 1em;
     width: 80%; }
+
+  .etiquette {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 0.9em;
+    width: 79px;
+    height: 29px;
+    left: 70%;
+    top: 15px;
+    border-radius: 2px;
+    color: #008766;
+    background-color: #99e2d0; }
 
   .coeur {
     display: block;
