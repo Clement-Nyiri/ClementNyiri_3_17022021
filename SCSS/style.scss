@@ -118,7 +118,7 @@
         margin-top: 5%;
         &:hover{
         	background: linear-gradient(to bottom right, #ff8ee0, #a05def);
-        	box-shadow: -3px 6px 10px #A0A0A0;
+        	box-shadow: -3px 8px 10px #747474;
         }
     }
 
@@ -237,20 +237,19 @@
 
     $cd-btn-end: linear-gradient(to top, #FF79DA, #9356DC);
 
-    #section_3 i
+    .coeur
     {	
-    	display: inline-block;
-    	font-size: 1.5em;
+    	display: block;
+    	height: 32px;
+    	width: 40px;
     	position: relative;
-    	left: 100%;
-    	bottom: 50px;
+    	left: 85%;
+    	bottom: 22%;
     	cursor: pointer;
-    	background-color: white;
-    	box-shadow: 0 200px 100px -100px white inset; 
-    	transition: box-shadow 700ms;
+    	background: url(images/heart2.png) no-repeat;
+    	transition: background 4s;
     	&:active {
-    		background-color: #FF79DA;
-    		box-shadow: 0 200px 100px -200px #9356DC inset;
+    		background: url(images/heart3.png) no-repeat;
     	}
     }
 

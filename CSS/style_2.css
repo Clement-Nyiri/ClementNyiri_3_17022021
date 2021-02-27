@@ -76,11 +76,15 @@
     margin-top: 30px;
     color: black; }
 
-  #titre_1 i {
-    font-size: 0.9em;
-    font-weight: lighter;
+  .coeur {
+    height: 32px;
+    width: 40px;
     position: absolute;
-    right: 38px; }
+    right: 38px;
+    background: url(images/heart5.png) no-repeat;
+    transition: background 1s; }
+    .coeur:active {
+      background: url(images/heart4.png); }
 
   #section_2 {
     margin-top: -40px; }

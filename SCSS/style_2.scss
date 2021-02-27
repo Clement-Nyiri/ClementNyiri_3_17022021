@@ -99,12 +99,17 @@
         color: black;
     }
 
-    #titre_1 i
+    .coeur
     {
-        font-size: 0.9em;
-        font-weight: lighter;
+        height: 32px;
+        width: 40px;
         position: absolute;
         right: 38px;
+        background: url(images/heart5.png) no-repeat;
+        transition: background 1s;
+        &:active {
+            background: url(images/heart4.png);
+        }
     }
 
     #section_2

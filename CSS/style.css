@@ -92,7 +92,7 @@
     margin-top: 5%; }
     #section_1 button:hover {
       background: linear-gradient(to bottom right, #ff8ee0, #a05def);
-      box-shadow: -3px 6px 10px #A0A0A0; }
+      box-shadow: -3px 8px 10px #747474; }
 
   #section_2 {
     display: flex;
@@ -181,19 +181,18 @@
     font-size: 1em;
     width: 80%; }
 
-  #section_3 i {
-    display: inline-block;
-    font-size: 1.5em;
+  .coeur {
+    display: block;
+    height: 32px;
+    width: 40px;
     position: relative;
-    left: 100%;
-    bottom: 50px;
+    left: 85%;
+    bottom: 22%;
     cursor: pointer;
-    background-color: white;
-    box-shadow: 0 200px 100px -100px white inset;
-    transition: box-shadow 700ms; }
-    #section_3 i:active {
-      background-color: #FF79DA;
-      box-shadow: 0 200px 100px -200px #9356DC inset; }
+    background: url(images/heart2.png) no-repeat;
+    transition: background 4s; }
+    .coeur:active {
+      background: url(images/heart3.png) no-repeat; }
 
   footer {
     display: flex;
