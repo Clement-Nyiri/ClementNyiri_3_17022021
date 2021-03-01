@@ -80,11 +80,24 @@
     height: 32px;
     width: 40px;
     position: absolute;
+    top: 23px;
     right: 38px;
-    background: url(images/heart5.png) no-repeat;
-    transition: background 1s; }
-    .coeur:active {
-      background: url(images/heart4.png); }
+    z-index: 1;
+    background: url(images/heart5.png) no-repeat; }
+
+  .coeur__bg {
+    background: url(images/heart4.png);
+    height: 32px;
+    width: 40px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 750ms; }
+    .coeur__bg:active {
+      opacity: 1; }
 
   #section_2 {
     margin-top: -40px; }

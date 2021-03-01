@@ -265,12 +265,26 @@
     	position: relative;
     	left: 85%;
     	bottom: 22%;
+    	z-index: 1;
     	cursor: pointer;
-    	background: url(images/heart2.png) no-repeat;
-    	transition: background 4s;
-    	&:active {
-    		background: url(images/heart3.png) no-repeat;
-    	}
+    	background: url(images/heart2.png) no-repeat;	
+    }
+
+    .coeur__bg
+    {
+        background: url(images/heart3.png);
+        height: 32px;
+        width: 40px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+        transition: opacity 750ms;
+        &:active{
+            opacity:1;
+        }
     }
 
 	footer /* Pied de page */
