@@ -14,7 +14,7 @@
   font-family: shrikhand;
   src: url(polices/shrikhand/Shrikhand-Regular.otf);
   font-weight: normal; }
-@media all and (min-width: 320px) and (max-width: 767px) {
+@media all and (min-width: 320px) and (max-width: 768px) {
   #bloc_page {
     display: flex;
     flex-direction: column;
@@ -211,7 +211,7 @@
 
   #proposer {
     font-weight: bold; } }
-@media all and (min-width: 768px) and (max-width: 1023px) {
+@media all and (min-width: 769px) and (max-width: 1023px) {
   #bloc_page {
     display: flex;
     flex-direction: column;
