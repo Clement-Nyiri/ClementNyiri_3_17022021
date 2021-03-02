@@ -211,7 +211,7 @@
 
   #proposer {
     font-weight: bold; } }
-@media all and (min-width: 769px) and (max-width: 1023px) {
+@media all and (min-width: 769px) and (max-width: 1024px) {
   #bloc_page {
     display: flex;
     flex-direction: column;
@@ -436,7 +436,7 @@
 
   #proposer {
     font-weight: bold; } }
-@media all and (min-width: 1024px) and (max-width: 1919px) {
+@media all and (min-width: 1025px) and (max-width: 1919px) {
   #bloc_page {
     display: flex;
     flex-direction: column;
