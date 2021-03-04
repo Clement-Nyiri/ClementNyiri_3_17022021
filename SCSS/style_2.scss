@@ -154,6 +154,8 @@
         margin-top: -40px;
     }
 
+    
+
     .titre_section
     {   
         font-size: 0.9em;
@@ -187,11 +189,21 @@
         margin-top: 10px;
         margin-left: 3%;
     }
-    
-   
+
+    @keyframes AFF{
+        0%{
+            transform: translateY(25%);
+            opacity: 0;
+        }
+        100%{
+            transform: translateY(0%);
+            opacity: 1;
+        }
+    }
 
     section article
-    {
+    {   
+        animation: AFF 1000ms;
         margin-left: 5%;
         margin-bottom: 5%;
         cursor: pointer;
@@ -204,6 +216,9 @@
         &:active {
             &::after{
             transform: translateX(-100%);
+            }
+            .prix{
+                transform: translateX(-20%);
             }
         }
                 &::after{
@@ -244,6 +259,7 @@
         margin-right: 20px;
         text-align:right;
         position: relative;
+        transition: all 750ms ease-in-out;
     }
 
     #section_5

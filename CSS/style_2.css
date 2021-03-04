@@ -141,7 +141,15 @@
     margin-top: 10px;
     margin-left: 3%; }
 
+  @keyframes AFF {
+    0% {
+      transform: translateY(25%);
+      opacity: 0; }
+    100% {
+      transform: translateY(0%);
+      opacity: 1; } }
   section article {
+    animation: AFF 1000ms;
     margin-left: 5%;
     margin-bottom: 5%;
     cursor: pointer;
@@ -153,6 +161,8 @@
     overflow: hidden; }
     section article:active::after {
       transform: translateX(-100%); }
+    section article:active .prix {
+      transform: translateX(-20%); }
     section article::after {
       font-family: "Font Awesome 5 Free";
       font-weight: 900;
@@ -185,7 +195,8 @@
     margin-top: -28px;
     margin-right: 20px;
     text-align: right;
-    position: relative; }
+    position: relative;
+    transition: all 750ms ease-in-out; }
 
   #section_5 {
     width: 100%;
