@@ -101,30 +101,51 @@
     }
 
     .coeur
-    {
+    {   
+        display: block;
         height: 32px;
         width: 40px;
         position: absolute;
         top: 23px;
         right: 38px;
         z-index: 1;
-        background: url(images/heart5.png) no-repeat;  
+        cursor: pointer;
+        background: url(images/heart5.png) no-repeat;
+        &:active{
+            &::after{
+                animation: coeur 500ms forwards;
+            }
+        }
+            &::after
+                {   
+            content:"";
+            background: url(images/heart4.png);
+            height: 32px;
+            width: 40px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            opacity: 0;
+            }
     }
 
-    .coeur__bg
-    {
-        background: url(images/heart4.png);
-        height: 32px;
-        width: 40px;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        opacity: 0;
-        transition: opacity 750ms;
-        &:active{
-            opacity:1;
+    @keyframes coeur{
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+
+    @-moz-keyframes coeur{
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
         }
     }
 
@@ -173,12 +194,36 @@
     {
         margin-left: 5%;
         margin-bottom: 5%;
+        cursor: pointer;
         width: 93%;
         border: 0px black solid;
         border-radius: 0.75em;
         background-color: white;
         box-shadow: -5px 5px 5px #e7e7e7;
         overflow: hidden;
+        &:active {
+            &::after{
+            transform: translateX(-100%);
+            }
+        }
+                &::after{
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                font-size: 1.4em;
+                content:"\f058";
+                position: relative;
+                left: 100%;
+                bottom: 99%;
+                background: #99E2D0;
+                color: white;
+                height:100%;
+                width: 20%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: -25px;
+                transition: all 750ms ease-in-out;
+                }
     }
 
     section
@@ -198,6 +243,7 @@
         margin-top: -28px;
         margin-right: 20px;
         text-align:right;
+        position: relative;
     }
 
     #section_5
@@ -362,58 +408,51 @@
     }
 
     .coeur
-    {
+    {   
+        display: block;
         height: 32px;
         width: 40px;
         position: absolute;
         top: 23px;
         right: 38px;
         z-index: 1;
-        background: url(images/heart5.png) no-repeat;  
+        cursor: pointer;
+        background: url(images/heart5.png) no-repeat;
+        &:active{
+            &::after{
+                animation: coeur 500ms forwards;
+            }
+        }
+            &::after
+                {   
+            content:"";
+            background: url(images/heart4.png);
+            height: 32px;
+            width: 40px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            opacity: 0;
+            }
     }
 
-    .coeur__bg
-    {
-        background: url(images/heart4.png);
-        height: 32px;
-        width: 40px;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        opacity: 0;
-        transition: opacity 750ms;
-        &:active{
-            opacity:1;
+    @keyframes coeur{
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
         }
     }
 
-    .coeur
-    {
-        height: 32px;
-        width: 40px;
-        position: absolute;
-        top: 23px;
-        right: 38px;
-        z-index: 1;
-        background: url(images/heart5.png) no-repeat;  
-    }
-
-    .coeur__bg
-    {
-        background: url(images/heart4.png);
-        height: 32px;
-        width: 40px;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        opacity: 0;
-        transition: opacity 750ms;
-        &:active{
-            opacity:1;
+    @-moz-keyframes coeur{
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
         }
     }
 
@@ -470,12 +509,36 @@
     {
         margin-left: 5%;
         margin-bottom: 5%;
-        width: 90%;
+        cursor: pointer;
+        width: 93%;
         border: 0px black solid;
         border-radius: 0.75em;
         background-color: white;
         box-shadow: -5px 5px 5px #e7e7e7;
         overflow: hidden;
+        &:active {
+            &::after{
+            transform: translateX(-100%);
+            }
+        }
+                &::after{
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                font-size: 1.4em;
+                content:"\f058";
+                position: relative;
+                left: 100%;
+                bottom: 90%;
+                background: #99E2D0;
+                color: white;
+                height:100%;
+                width: 20%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: -20px;
+                transition: all 750ms ease-in-out;
+                }
     }
 
     section
@@ -660,58 +723,51 @@
     }
 
     .coeur
-    {
+    {   
+        display: block;
         height: 32px;
         width: 40px;
         position: absolute;
         top: 23px;
         right: 38px;
         z-index: 1;
-        background: url(images/heart5.png) no-repeat;  
+        cursor: pointer;
+        background: url(images/heart5.png) no-repeat;
+        &:active{
+            &::after{
+                animation: coeur 500ms forwards;
+            }
+        }
+            &::after
+                {   
+            content:"";
+            background: url(images/heart4.png);
+            height: 32px;
+            width: 40px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            opacity: 0;
+            }
     }
 
-    .coeur__bg
-    {
-        background: url(images/heart4.png);
-        height: 32px;
-        width: 40px;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        opacity: 0;
-        transition: opacity 750ms;
-        &:active{
-            opacity:1;
+    @keyframes coeur{
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
         }
     }
 
-    .coeur
-    {
-        height: 32px;
-        width: 40px;
-        position: absolute;
-        top: 23px;
-        right: 38px;
-        z-index: 1;
-        background: url(images/heart5.png) no-repeat;  
-    }
-
-    .coeur__bg
-    {
-        background: url(images/heart4.png);
-        height: 32px;
-        width: 40px;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        opacity: 0;
-        transition: opacity 750ms;
-        &:active{
-            opacity:1;
+    @-moz-keyframes coeur{
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
         }
     }
 
@@ -768,12 +824,36 @@
     {
         margin-left: 5%;
         margin-bottom: 5%;
-        width: 90%;
+        cursor: pointer;
+        width: 93%;
         border: 0px black solid;
         border-radius: 0.75em;
         background-color: white;
         box-shadow: -5px 5px 5px #e7e7e7;
         overflow: hidden;
+        &:active {
+            &::after{
+            transform: translateX(-100%);
+            }
+        }
+                &::after{
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                font-size: 1.4em;
+                content:"\f058";
+                position: relative;
+                left: 100%;
+                bottom: 90%;
+                background: #99E2D0;
+                color: white;
+                height:100%;
+                width: 20%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: -20px;
+                transition: all 750ms ease-in-out;
+                }
     }
 
     section

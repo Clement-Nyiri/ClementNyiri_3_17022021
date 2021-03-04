@@ -78,28 +78,39 @@
     color: black; }
 
   .coeur {
+    display: block;
     height: 32px;
     width: 40px;
     position: absolute;
     top: 23px;
     right: 38px;
     z-index: 1;
+    cursor: pointer;
     background: url(images/heart5.png) no-repeat; }
+    .coeur:active::after {
+      animation: coeur 500ms forwards; }
+    .coeur::after {
+      content: "";
+      background: url(images/heart4.png);
+      height: 32px;
+      width: 40px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0; }
 
-  .coeur__bg {
-    background: url(images/heart4.png);
-    height: 32px;
-    width: 40px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: 0;
-    transition: opacity 750ms; }
-    .coeur__bg:active {
-      opacity: 1; }
-
+  @keyframes coeur {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
+  @-moz-keyframes coeur {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
   #section_2 {
     margin-top: -40px; }
 
@@ -133,12 +144,32 @@
   section article {
     margin-left: 5%;
     margin-bottom: 5%;
+    cursor: pointer;
     width: 93%;
     border: 0px black solid;
     border-radius: 0.75em;
     background-color: white;
     box-shadow: -5px 5px 5px #e7e7e7;
     overflow: hidden; }
+    section article:active::after {
+      transform: translateX(-100%); }
+    section article::after {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: 1.4em;
+      content: "\f058";
+      position: relative;
+      left: 100%;
+      bottom: 99%;
+      background: #99E2D0;
+      color: white;
+      height: 100%;
+      width: 20%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: -25px;
+      transition: all 750ms ease-in-out; }
 
   section {
     margin-bottom: 30px;
@@ -153,7 +184,8 @@
     margin-left: 0;
     margin-top: -28px;
     margin-right: 20px;
-    text-align: right; }
+    text-align: right;
+    position: relative; }
 
   #section_5 {
     width: 100%;
@@ -275,51 +307,39 @@
     color: black; }
 
   .coeur {
+    display: block;
     height: 32px;
     width: 40px;
     position: absolute;
     top: 23px;
     right: 38px;
     z-index: 1;
+    cursor: pointer;
     background: url(images/heart5.png) no-repeat; }
+    .coeur:active::after {
+      animation: coeur 500ms forwards; }
+    .coeur::after {
+      content: "";
+      background: url(images/heart4.png);
+      height: 32px;
+      width: 40px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0; }
 
-  .coeur__bg {
-    background: url(images/heart4.png);
-    height: 32px;
-    width: 40px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: 0;
-    transition: opacity 750ms; }
-    .coeur__bg:active {
-      opacity: 1; }
-
-  .coeur {
-    height: 32px;
-    width: 40px;
-    position: absolute;
-    top: 23px;
-    right: 38px;
-    z-index: 1;
-    background: url(images/heart5.png) no-repeat; }
-
-  .coeur__bg {
-    background: url(images/heart4.png);
-    height: 32px;
-    width: 40px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: 0;
-    transition: opacity 750ms; }
-    .coeur__bg:active {
-      opacity: 1; }
-
+  @keyframes coeur {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
+  @-moz-keyframes coeur {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
   #menus {
     display: flex;
     flex-direction: row;
@@ -360,12 +380,32 @@
   section article {
     margin-left: 5%;
     margin-bottom: 5%;
-    width: 90%;
+    cursor: pointer;
+    width: 93%;
     border: 0px black solid;
     border-radius: 0.75em;
     background-color: white;
     box-shadow: -5px 5px 5px #e7e7e7;
     overflow: hidden; }
+    section article:active::after {
+      transform: translateX(-100%); }
+    section article::after {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: 1.4em;
+      content: "\f058";
+      position: relative;
+      left: 100%;
+      bottom: 90%;
+      background: #99E2D0;
+      color: white;
+      height: 100%;
+      width: 20%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: -20px;
+      transition: all 750ms ease-in-out; }
 
   section {
     margin-bottom: 30px;
@@ -502,51 +542,39 @@
     color: black; }
 
   .coeur {
+    display: block;
     height: 32px;
     width: 40px;
     position: absolute;
     top: 23px;
     right: 38px;
     z-index: 1;
+    cursor: pointer;
     background: url(images/heart5.png) no-repeat; }
+    .coeur:active::after {
+      animation: coeur 500ms forwards; }
+    .coeur::after {
+      content: "";
+      background: url(images/heart4.png);
+      height: 32px;
+      width: 40px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0; }
 
-  .coeur__bg {
-    background: url(images/heart4.png);
-    height: 32px;
-    width: 40px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: 0;
-    transition: opacity 750ms; }
-    .coeur__bg:active {
-      opacity: 1; }
-
-  .coeur {
-    height: 32px;
-    width: 40px;
-    position: absolute;
-    top: 23px;
-    right: 38px;
-    z-index: 1;
-    background: url(images/heart5.png) no-repeat; }
-
-  .coeur__bg {
-    background: url(images/heart4.png);
-    height: 32px;
-    width: 40px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: 0;
-    transition: opacity 750ms; }
-    .coeur__bg:active {
-      opacity: 1; }
-
+  @keyframes coeur {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
+  @-moz-keyframes coeur {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
   #menus {
     display: flex;
     flex-direction: row;
@@ -587,12 +615,32 @@
   section article {
     margin-left: 5%;
     margin-bottom: 5%;
-    width: 90%;
+    cursor: pointer;
+    width: 93%;
     border: 0px black solid;
     border-radius: 0.75em;
     background-color: white;
     box-shadow: -5px 5px 5px #e7e7e7;
     overflow: hidden; }
+    section article:active::after {
+      transform: translateX(-100%); }
+    section article::after {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: 1.4em;
+      content: "\f058";
+      position: relative;
+      left: 100%;
+      bottom: 90%;
+      background: #99E2D0;
+      color: white;
+      height: 100%;
+      width: 20%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: -20px;
+      transition: all 750ms ease-in-out; }
 
   section {
     margin-bottom: 30px;

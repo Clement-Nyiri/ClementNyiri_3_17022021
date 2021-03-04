@@ -209,21 +209,30 @@
     z-index: 1;
     cursor: pointer;
     background: url(images/heart2.png) no-repeat; }
+    .coeur:active::after {
+      animation: coeur 500ms forwards; }
+    .coeur::after {
+      content: "";
+      background: url(images/heart3.png);
+      height: 32px;
+      width: 40px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0; }
 
-  .coeur__bg {
-    background: url(images/heart3.png);
-    height: 32px;
-    width: 40px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: 0;
-    transition: opacity 750ms; }
-    .coeur__bg:active {
-      opacity: 1; }
-
+  @keyframes coeur {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
+  @-moz-keyframes coeur {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
   footer {
     display: flex;
     flex-direction: column;
@@ -463,21 +472,30 @@
     z-index: 1;
     cursor: pointer;
     background: url(images/heart2.png) no-repeat; }
+    .coeur:active::after {
+      animation: coeur 500ms forwards; }
+    .coeur::after {
+      content: "";
+      background: url(images/heart3.png);
+      height: 32px;
+      width: 40px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0; }
 
-  .coeur__bg {
-    background: url(images/heart3.png);
-    height: 32px;
-    width: 40px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: 0;
-    transition: opacity 750ms; }
-    .coeur__bg:active {
-      opacity: 1; }
-
+  @keyframes coeur {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
+  @-moz-keyframes coeur {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
   footer {
     display: flex;
     flex-direction: column;
@@ -723,21 +741,30 @@
     z-index: 1;
     cursor: pointer;
     background: url(images/heart2.png) no-repeat; }
+    .coeur:active::after {
+      animation: coeur 500ms forwards; }
+    .coeur::after {
+      content: "";
+      background: url(images/heart3.png);
+      height: 32px;
+      width: 40px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0; }
 
-  .coeur__bg {
-    background: url(images/heart3.png);
-    height: 32px;
-    width: 40px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: 0;
-    transition: opacity 750ms; }
-    .coeur__bg:active {
-      opacity: 1; }
-
+  @keyframes coeur {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
+  @-moz-keyframes coeur {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
   footer {
     display: flex;
     flex-direction: column;
