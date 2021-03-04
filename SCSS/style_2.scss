@@ -215,7 +215,7 @@
         overflow: hidden;
         &:active {
             &::after{
-            transform: translateX(-100%);
+                transform: translateX(-100%);
             }
             .prix{
                 transform: translateX(-20%);
@@ -520,9 +520,21 @@
         margin-top: 10px;
         margin-left: 3%;
     }
+
+    @keyframes AFF{
+        0%{
+            transform: translateY(25%);
+            opacity: 0;
+        }
+        100%{
+            transform: translateY(0%);
+            opacity: 1;
+        }
+    }
     
     section article
-    {
+    {   
+        animation: AFF 1000ms;
         margin-left: 5%;
         margin-bottom: 5%;
         cursor: pointer;
@@ -835,9 +847,21 @@
         margin-top: 10px;
         margin-left: 3%;
     }
+
+    @keyframes AFF{
+        0%{
+            transform: translateY(25%);
+            opacity: 0;
+        }
+        100%{
+            transform: translateY(0%);
+            opacity: 1;
+        }
+    }
     
     section article
-    {
+    {   
+        animation: AFF 1000ms;
         margin-left: 5%;
         margin-bottom: 5%;
         cursor: pointer;
