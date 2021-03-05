@@ -371,10 +371,14 @@
         font-weight: bold;
     }
 
+    #contact a
+    {
+    	color: white;
+    }
+
     a
     {
     	text-decoration: none;
-    	color: black;
     }
 
     a:visited
@@ -726,6 +730,10 @@
     {
         font-weight: bold;
     }
+    #contact a
+    {
+    	color: white;
+    }
 
     a
     {
@@ -804,41 +812,42 @@
 	{
 		display: flex;
 		flex-direction: column;
-		text-align: center;
+		text-align: left;
+		justify-content: flex-start;
 		background-color: #f6f6f6;
+		height: 200px;
 	}
 
 	#section_1 h1
 	{	
-		width: 65%;
-		margin-left: 20%;
-		margin-top: 10%;
+		width: 50%;
+		margin-top: 5%;
+		margin-left: 11%
 	}
 
 	#section_1 p
-	{
-		width: 80%;
-		margin-left: 12%;
-		margin-top: -10px;
+	{	
+		width: 50%;
 		font-size: 1em;
+		margin-left: 8%;
 	}
 
 	#section_1 button
     {	
     	font-family: roboto;
         border-radius: 5em;
-        height: 50px;
+        min-height: 70px;
         width: 60%;
         max-width: 250px;
-        margin:auto;
+        position: relative;
+        left: 70%;
+        top: -45%;
         color: white;
         font-weight: bold;
         font-size: 0.9em;
         background: linear-gradient(to bottom right,#FF79DA, #9356DC);
         box-shadow: -3px 8px 10px #C5C5C5;
         border: 0;
-        margin-bottom: 10%;
-        margin-top: 5%;
         &:hover{
         	background: linear-gradient(to bottom right, #ff8ee0, #a05def);
         	box-shadow: -3px 8px 10px #747474;
@@ -848,7 +857,8 @@
     #section_2 /*Section 2*/
     {
     	display: flex;
-    	flex-direction: column;
+    	flex-direction: row;
+    	flex-wrap: wrap;
     	justify-content: space-between;
     	align-items: center;
     	margin-bottom: 10%;
@@ -856,9 +866,9 @@
 
     #section_2 article
     {
-    	margin-left: 5%;
+    	margin-left: 1%;
         margin-bottom: 4%;
-        width: 93%;
+        width: 29%;
         max-width: 650px;
         border: 0px black solid;
         border-radius: 1em;
@@ -875,11 +885,13 @@
     	margin-left: 3%;
     	margin-top: 5%;
     	margin-bottom: 6%;
+    	flex-basis: 100%;
+    	text-align: center;
     }
 
     #section_2 p
     {	
-    	margin-left: 22%;
+    	margin-left: 10%;
     }
 
     #section_2 i
@@ -922,8 +934,7 @@
     #section_3 h2
     {
     	flex-basis: 100%;
-    	text-align: left;
-    	margin-left: 8%;
+    	text-align: center;
     }
 
     #section_3 article
@@ -1084,6 +1095,10 @@
     #proposer
     {
         font-weight: bold;
+    }
+    #contact a
+    {
+    	color: white;
     }
 
     a
