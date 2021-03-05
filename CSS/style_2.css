@@ -147,7 +147,8 @@
       opacity: 0; }
     100% {
       transform: translateY(0%);
-      opacity: 1; } }
+      opacity: 1;
+      text-overflow: ellipsis; } }
   section article {
     animation: AFF 1000ms;
     margin-left: 5%;
