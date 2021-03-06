@@ -272,54 +272,49 @@
 
     .coeur
     {	
-    	display: block;
+    	display: inline;
     	height: 32px;
     	width: 40px;
+    	z-index:1;
     	position: relative;
-    	left: 85%;
+    	left: 83.7%;
     	bottom: 22%;
-    	opacity: 1;
-    	cursor: pointer;
-    	background: url(images/heart2.png) no-repeat;
-    	&:hover:after{
-    		animation: coeur 500ms forwards;
-    	}
-    		&::after
-    			{	
-    		content:"";
-        	background: url(images/heart3.png);
-        	height: 32px;
-        	width: 40px;
-	        position: absolute;
-	        top: 0;
-	        bottom: 0;
-	        left: 0;
-	        right: 0;
-	        opacity: 0;
-    		}
-	}
+    	opacity: 0;
+    }
 
-    @keyframes coeur{
-    	from{
-    		opacity: 0;	
-    	}
-    	
-    	to{
+    $btn-coeur-end : linear-gradient(to bottom, rgba(100, 47.5, 85.5, 1),rgba(57.6, 33.7,86.3, 1));
+
+    @keyframes coeurchecked{
+    	0%{
+    		background: url(images/heart2.png) no-repeat;
     		opacity: 1;
     	}
+
+    	25%{
+    		opacity:0;
+    	}
+    	100%{
+    		background: url(images/heart3.png) no-repeat;
+    		opacity:1;
+    	}
     }
 
-    @-moz-keyframes coeur{
-    	from{
-    		-moz-opacity: 0;	
-    	}
-    	
-    	to{
-    		-moz-opacity: 1;
-    	}
-
+    .coeur:checked + label
+    {
+    	animation: coeurchecked 1000ms forwards;
     }
-    
+
+    .btn
+    {	
+    	display: block;
+    	position: relative;
+    	width: 35px;
+    	height: 45px;
+    	bottom: 37%;
+    	left:84.5%;
+    	z-index: 0;
+    	background: url(images/heart2.png) no-repeat;
+    }
 
 	footer
     {
@@ -379,6 +374,7 @@
     a
     {
     	text-decoration: none;
+    	color: black;
     }
 
     a:visited
@@ -630,51 +626,46 @@
 
     .coeur
     {	
-    	display: block;
+    	display: inline;
     	height: 32px;
     	width: 40px;
+    	z-index:1;
     	position: relative;
-    	left: 85%;
+    	left: 83.7%;
     	bottom: 22%;
-    	z-index: 1;
-    	cursor: pointer;
-    	background: url(images/heart2.png) no-repeat;
-    	&:active{
-    		&::after{
-    			animation: coeur 500ms forwards;
-    		}
-    	}
-    		&::after
-    			{	
-    		content:"";
-        	background: url(images/heart3.png);
-        	height: 32px;
-        	width: 40px;
-	        position: absolute;
-	        top: 0;
-	        bottom: 0;
-	        left: 0;
-	        right: 0;
-	        opacity: 0;
-    		}
-	}
+    	opacity: 0;
+    }
 
-    @keyframes coeur{
+    @keyframes coeurchecked{
     	0%{
-    		opacity: 0;
+    		background: url(images/heart2.png) no-repeat;
+    		opacity: 1;
+    	}
+
+    	25%{
+    		opacity:0;
     	}
     	100%{
-    		opacity: 1;
+    		background: url(images/heart3.png) no-repeat;
+    		opacity:1;
     	}
     }
 
-    @-moz-keyframes coeur{
-    	0%{
-    		opacity: 0;
-    	}
-    	100%{
-    		opacity: 1;
-    	}
+    .coeur:checked + label
+    {
+    	animation: coeurchecked 1000ms forwards;
+    }
+
+    .btn
+    {	
+    	display: block;
+    	position: relative;
+    	width: 35px;
+    	height: 45px;
+    	bottom: 37%;
+    	left:84.5%;
+    	z-index: 0;
+    	background: url(images/heart2.png) no-repeat;
     }
 
 	footer
@@ -996,51 +987,48 @@
 
     .coeur
     {	
-    	display: block;
+    	display: inline;
     	height: 32px;
     	width: 40px;
+    	z-index:1;
     	position: relative;
-    	left: 85%;
+    	left: 83.7%;
     	bottom: 22%;
-    	z-index: 1;
-    	cursor: pointer;
-    	background: url(images/heart2.png) no-repeat;
-    	&:active{
-    		&::after{
-    			animation: coeur 500ms forwards;
-    		}
-    	}
-    		&::after
-    			{	
-    		content:"";
-        	background: url(images/heart3.png);
-        	height: 32px;
-        	width: 40px;
-	        position: absolute;
-	        top: 0;
-	        bottom: 0;
-	        left: 0;
-	        right: 0;
-	        opacity: 0;
-    		}
-	}
+    	opacity: 0;
+    }
 
-    @keyframes coeur{
+    $btn-coeur-end : linear-gradient(to bottom, rgba(100, 47.5, 85.5, 1),rgba(57.6, 33.7,86.3, 1));
+
+    @keyframes coeurchecked{
     	0%{
-    		opacity: 0;
+    		background: url(images/heart2.png) no-repeat;
+    		opacity: 1;
+    	}
+
+    	25%{
+    		opacity:0;
     	}
     	100%{
-    		opacity: 1;
+    		background: url(images/heart3.png) no-repeat;
+    		opacity:1;
     	}
     }
 
-    @-moz-keyframes coeur{
-    	0%{
-    		opacity: 0;
-    	}
-    	100%{
-    		opacity: 1;
-    	}
+    .coeur:checked + label
+    {
+    	animation: coeurchecked 1000ms forwards;
+    }
+
+    .btn
+    {	
+    	display: block;
+    	position: relative;
+    	width: 35px;
+    	height: 45px;
+    	bottom: 37%;
+    	left:84.5%;
+    	z-index: 0;
+    	background: url(images/heart2.png) no-repeat;
     }
 
 	footer
