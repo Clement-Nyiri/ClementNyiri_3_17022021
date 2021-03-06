@@ -110,6 +110,7 @@
         right: 30px;
         top: 23px;
         opacity: 0;
+        cursor: pointer;
     }
 
     
@@ -220,7 +221,7 @@
             }
             .anim{
                 transform: translateX(-100%);
-                opacity: 1;
+                opacity:1;
             }
         }    
     }
