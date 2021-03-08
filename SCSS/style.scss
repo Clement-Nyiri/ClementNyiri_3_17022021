@@ -25,7 +25,7 @@
 		0%{
 			opacity: 0;
 		}
-		80%{
+		90%{
 			opacity: 0;
 		}
 		100%{
@@ -33,8 +33,39 @@
 		}
 	}
 
+	#loader {
+	  position: absolute;
+	  left: 50%;
+	  top: 50%;
+	  opacity: 0;
+	  z-index: 1;
+	  width: 120px;
+	  height: 120px;
+	  margin: -76px 0 0 -76px;
+	  border: 16px solid #f3f3f3;
+	  border-radius: 50%;
+	  border-top: 16px solid #46ddb7;
+	  border-bottom: 16px solid #6203d3;
+	  animation: spin 2s linear ;
+	}
+
+@keyframes spin {
+  0% { 
+  	transform: rotate(0deg);
+  	opaicty: 1; 
+  }
+
+  90%{
+  	opacity: 1;
+  }
+  100% { 
+  	transform: rotate(360deg); 
+  	opacity: 0;
+  }
+}
+
 	#bloc_page{
-		animation: LS 2000ms;
+		animation: LS 2300ms;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -111,6 +142,7 @@
 		margin-left: 12%;
 		margin-top: -10px;
 		font-size: 1em;
+		color:#656565;
 	}
 
 	#section_1 button
@@ -251,6 +283,7 @@
     	margin-left: 4%;
     	font-size: 1em;
     	width: 80%;
+
     }
 
 	.etiquette
@@ -386,7 +419,51 @@
 
 @media all and (min-width: 769px) and (max-width: 1024px) /* Version Tablette */
 {	
+
+	@keyframes LS{
+		0%{
+			opacity: 0;
+		}
+		90%{
+			opacity: 0;
+		}
+		100%{
+			opacity: 1;
+		}
+	}
+
+	#loader {
+	  position: absolute;
+	  left: 50%;
+	  top: 50%;
+	  opacity: 0;
+	  z-index: 1;
+	  width: 120px;
+	  height: 120px;
+	  margin: -76px 0 0 -76px;
+	  border: 16px solid #f3f3f3;
+	  border-radius: 50%;
+	  border-top: 16px solid #9356DC;
+	  border-bottom: 16px solid #FF79DA;
+	  animation: spin 2s linear ;
+	}
+
+@keyframes spin {
+  0% { 
+  	transform: rotate(0deg);
+  	opaicty: 1; 
+  }
+
+  90%{
+  	opacity: 1;
+  }
+  100% { 
+  	transform: rotate(360deg); 
+  	opacity: 0;
+  }
+}
 	#bloc_page{
+		animation: LS 2300ms;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -463,6 +540,7 @@
 		margin-left: 12%;
 		margin-top: -10px;
 		font-size: 1em;
+		color:#656565;
 	}
 
 	#section_1 button
@@ -741,7 +819,50 @@
 
 @media all and (min-width: 1025px) and (max-width: 1919px) /* Version Tablette */
 {	
+	@keyframes LS{
+		0%{
+			opacity: 0;
+		}
+		90%{
+			opacity: 0;
+		}
+		100%{
+			opacity: 1;
+		}
+	}
+
+	#loader {
+	  position: absolute;
+	  left: 50%;
+	  top: 50%;
+	  opacity: 0;
+	  z-index: 1;
+	  width: 120px;
+	  height: 120px;
+	  margin: -76px 0 0 -76px;
+	  border: 16px solid #f3f3f3;
+	  border-radius: 50%;
+	  border-top: 16px solid #9356DC;
+	  border-bottom: 16px solid #99E2D0;
+	  animation: spin 2s ease-in ;
+	}
+
+@keyframes spin {
+  0% { 
+  	transform: rotate(0deg);
+  	opaicty: 1; 
+  }
+
+  90%{
+  	opacity: 1;
+  }
+  100% { 
+  	transform: rotate(360deg); 
+  	opacity: 0;
+  }
+}
 	#bloc_page{
+		animation: LS 2300ms;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -821,6 +942,7 @@
 		width: 50%;
 		font-size: 1em;
 		margin-left: 8%;
+		color:#656565;
 	}
 
 	#section_1 button

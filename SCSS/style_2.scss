@@ -360,6 +360,16 @@
     {
         color: white;
     }
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+    a:visited
+    {
+        text-decoration: none;
+    }
 }
 
 @media all and (min-width: 768px) and (max-width: 1023px)
@@ -498,8 +508,12 @@
         flex-direction: row;
         flex-direction: space-around;
         align-items: flex-start;
-
         margin-bottom: 3%;
+    }
+
+    #menus p
+    {
+        font-size: 0.9em;
     }
 
     #section_2
@@ -1049,4 +1063,13 @@
     {
         color: white;
     }   
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+    a:visited
+    {
+        text-decoration: none;
+    }
 }

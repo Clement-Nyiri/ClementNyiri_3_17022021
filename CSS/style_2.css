@@ -268,7 +268,14 @@
     font-weight: bold; }
 
   #contact a {
-    color: white; } }
+    color: white; }
+
+  a {
+    text-decoration: none;
+    color: black; }
+
+  a:visited {
+    text-decoration: none; } }
 @media all and (min-width: 768px) and (max-width: 1023px) {
   #bloc_page {
     display: flex;
@@ -371,6 +378,9 @@
     flex-direction: space-around;
     align-items: flex-start;
     margin-bottom: 3%; }
+
+  #menus p {
+    font-size: 0.9em; }
 
   #section_2 {
     margin-top: -40px; }
@@ -775,4 +785,11 @@
     font-weight: bold; }
 
   #contact a {
-    color: white; } }
+    color: white; }
+
+  a {
+    text-decoration: none;
+    color: black; }
+
+  a:visited {
+    text-decoration: none; } }
