@@ -14,7 +14,65 @@
   font-family: shrikhand;
   src: url(polices/shrikhand/Shrikhand-Regular.otf);
   font-weight: normal; }
-@media all and (min-width: 320px) and (max-width: 768px) {
+@media all and (min-width: 320px) and (max-width: 767px) {
+  @keyframes loader {
+    0% {
+      opacity: 1; }
+    90% {
+      opacity: 1; }
+    100% {
+      opacity: 0; } }
+  #loader {
+    animation: loader 2200ms forwards;
+    position: absolute;
+    font-family: shrikhand;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 4%;
+    top: 30%; }
+
+  #fork {
+    height: 150px;
+    width: 22.1px;
+    margin-right: 2%;
+    margin-left: 5%;
+    animation: fork 2000ms; }
+
+  #knife {
+    height: 150px;
+    width: 22.1px;
+    margin-left: 15%;
+    animation: knife 2000ms forwards; }
+
+  #plate {
+    z-index: 0;
+    margin-left: 5%; }
+
+  #loader p {
+    z-index: 1;
+    margin-left: -43%;
+    color: #99E2D0; }
+
+  @keyframes fork {
+    0% {
+      transform: translateX(-300%) rotateZ(0deg); }
+    40% {
+      transform: translateX(0) rotateZ(10deg); }
+    65% {
+      transform: rotateZ(10deg); }
+    80% {
+      transform: translateX(0) rotateZ(0); } }
+  @keyframes knife {
+    0% {
+      transform: translateX(300%) rotateZ(0deg); }
+    40% {
+      transform: translateX(0) rotateZ(-10deg); }
+    85% {
+      transform: translateX(0) rotateZ(0deg); }
+    100% {
+      transform: translateX(0) rotateZ(0); } }
   @keyframes LS {
     0% {
       opacity: 0; }
@@ -22,47 +80,8 @@
       opacity: 0; }
     100% {
       opacity: 1; } }
-  #loader {
-    position: absolute;
-    font-family: shrikhand;
-    font-size: 1.2em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    left: 50%;
-    top: 50%;
-    opacity: 0;
-    z-index: 1;
-    width: 120px;
-    height: 120px;
-    margin: -76px 0 0 -76px;
-    border: 16px solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 16px solid #FF79DA;
-    border-right: 16px solid #FF79DA;
-    border-bottom: 16px solid #9356DC;
-    border-left: 16px solid #9356DC;
-    animation: spin 2s linear; }
-
-  #loader p {
-    animation: anti-spin 2s; }
-
-  @keyframes anti-spin {
-    0% {
-      transform: rotate(0deg); }
-    100% {
-      transform: rotate(-680deg); } }
-  @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-      opaicty: 1; }
-    90% {
-      opacity: 1; }
-    100% {
-      transform: rotate(360deg);
-      opacity: 0; } }
   #bloc_page {
-    animation: LS 2300ms;
+    animation: LS 2500ms;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -324,7 +343,66 @@
   a:visited {
     text-decoration: none;
     color: black; } }
-@media all and (min-width: 769px) and (max-width: 1024px) {
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  @keyframes loader {
+    0% {
+      opacity: 1; }
+    90% {
+      opacity: 1; }
+    100% {
+      opacity: 0; } }
+  #loader {
+    animation: loader 2200ms forwards;
+    position: absolute;
+    font-family: shrikhand;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 27%;
+    top: 25%; }
+
+  #fork {
+    height: 150px;
+    width: 22.1px;
+    margin-right: 2%;
+    margin-left: 5%;
+    animation: fork 2000ms; }
+
+  #knife {
+    height: 150px;
+    width: 22.1px;
+    margin-left: 15%;
+    animation: knife 2000ms forwards; }
+
+  #plate {
+    z-index: 0;
+    margin-left: 5%; }
+
+  #loader p {
+    z-index: 1;
+    margin-left: -43%;
+    color: #99E2D0;
+    animation: OMF 1800ms; }
+
+  @keyframes fork {
+    0% {
+      transform: translateX(-300%) rotateZ(0deg); }
+    40% {
+      transform: translateX(0) rotateZ(10deg); }
+    65% {
+      transform: rotateZ(10deg); }
+    80% {
+      transform: translateX(0) rotateZ(0); } }
+  @keyframes knife {
+    0% {
+      transform: translateX(300%) rotateZ(0deg); }
+    40% {
+      transform: translateX(0) rotateZ(-10deg); }
+    85% {
+      transform: translateX(0) rotateZ(0deg); }
+    100% {
+      transform: translateX(0) rotateZ(0); } }
   @keyframes LS {
     0% {
       opacity: 0; }
@@ -332,32 +410,8 @@
       opacity: 0; }
     100% {
       opacity: 1; } }
-  #loader {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    opacity: 0;
-    z-index: 1;
-    width: 120px;
-    height: 120px;
-    margin: -76px 0 0 -76px;
-    border: 16px solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 16px solid #9356DC;
-    border-bottom: 16px solid #FF79DA;
-    animation: spin 2s linear; }
-
-  @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-      opaicty: 1; }
-    90% {
-      opacity: 1; }
-    100% {
-      transform: rotate(360deg);
-      opacity: 0; } }
   #bloc_page {
-    animation: LS 2300ms;
+    animation: LS 2500ms;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -625,6 +679,64 @@
     text-decoration: none;
     color: black; } }
 @media all and (min-width: 1025px) and (max-width: 1919px) {
+  @keyframes loader {
+    0% {
+      opacity: 1; }
+    90% {
+      opacity: 1; }
+    100% {
+      opacity: 0; } }
+  #loader {
+    animation: loader 2200ms forwards;
+    position: absolute;
+    font-family: shrikhand;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 40%;
+    top: 40%; }
+
+  #fork {
+    height: 150px;
+    width: 22.1px;
+    margin-right: 2%;
+    margin-left: 5%;
+    animation: fork 2000ms; }
+
+  #knife {
+    height: 150px;
+    width: 22.1px;
+    margin-left: 15%;
+    animation: knife 2000ms forwards; }
+
+  #plate {
+    z-index: 0;
+    margin-left: 5%; }
+
+  #loader p {
+    z-index: 1;
+    margin-left: -43%;
+    color: #99E2D0; }
+
+  @keyframes fork {
+    0% {
+      transform: translateX(-300%) rotateZ(0deg); }
+    40% {
+      transform: translateX(0) rotateZ(10deg); }
+    65% {
+      transform: rotateZ(10deg); }
+    80% {
+      transform: translateX(0) rotateZ(0); } }
+  @keyframes knife {
+    0% {
+      transform: translateX(300%) rotateZ(0deg); }
+    40% {
+      transform: translateX(0) rotateZ(-10deg); }
+    85% {
+      transform: translateX(0) rotateZ(0deg); }
+    100% {
+      transform: translateX(0) rotateZ(0); } }
   @keyframes LS {
     0% {
       opacity: 0; }
@@ -632,32 +744,8 @@
       opacity: 0; }
     100% {
       opacity: 1; } }
-  #loader {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    opacity: 0;
-    z-index: 1;
-    width: 120px;
-    height: 120px;
-    margin: -76px 0 0 -76px;
-    border: 16px solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 16px solid #9356DC;
-    border-bottom: 16px solid #99E2D0;
-    animation: spin 2s ease-in; }
-
-  @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-      opaicty: 1; }
-    90% {
-      opacity: 1; }
-    100% {
-      transform: rotate(360deg);
-      opacity: 0; } }
   #bloc_page {
-    animation: LS 2300ms;
+    animation: LS 2500ms;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
