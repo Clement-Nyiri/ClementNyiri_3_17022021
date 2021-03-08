@@ -107,7 +107,7 @@
         width: 40px;
         z-index:1;
         position: absolute;
-        right: 30px;
+        right: 20px;
         top: 23px;
         opacity: 0;
         cursor: pointer;
@@ -141,7 +141,7 @@
         position: absolute;
         width: 35px;
         height: 45px;
-        right: 38px;
+        right: 25px;
         top: 25px;
         z-index: 0;
         background: url(images/heart2.png) no-repeat;
@@ -217,7 +217,7 @@
                 transform: rotateZ(360deg);
             }
             .prix{
-                transform: translateX(-100%);
+                transform: translateX(-75%);
             }
             .anim{
                 transform: translateX(-100%);
@@ -260,15 +260,14 @@
 
     .prix
     {   
-        width: 50px;
+        width: 60px;
         background-color: white;
         font-size: 0.8em;
         font-weight: bold;
         margin-left: 80%;
         margin-top: -28px;
-        margin-right: 0;
-        right: 5px;
-        text-align:right;
+        margin-right: -30px;
+        text-align:center;
         position: relative;
         transition: all 750ms ease-in-out;
     }
