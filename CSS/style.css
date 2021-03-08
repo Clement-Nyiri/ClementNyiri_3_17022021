@@ -45,9 +45,9 @@
     animation: spin 2s linear; }
 
   #loader p {
-    animation: no-spin 2s; }
+    animation: anti-spin 2s; }
 
-  @keyframes no-spin {
+  @keyframes anti-spin {
     0% {
       transform: rotate(0deg); }
     100% {

@@ -58,10 +58,10 @@
 
 	#loader p
 	{
-		animation: no-spin 2s;
+		animation: anti-spin 2s;
 	}
 
-	@keyframes no-spin{
+	@keyframes anti-spin{
 		0%{
 			transform: rotate(0deg);
 		}
@@ -70,20 +70,20 @@
 		}
 	}
 
-@keyframes spin {
-  0% { 
-  	transform: rotate(0deg);
-  	opaicty: 1; 
-  }
+	@keyframes spin {
+	  0% { 
+	  	transform: rotate(0deg);
+	  	opaicty: 1; 
+	  }
 
-  90%{
-  	opacity: 1;
-  }
-  100% { 
-  	transform: rotate(360deg); 
-  	opacity: 0;
-  }
-}
+	  90%{
+	  	opacity: 1;
+	  }
+	  100% { 
+	  	transform: rotate(360deg); 
+	  	opacity: 0;
+	  }
+	}
 
 	#bloc_page{
 		animation: LS 2300ms;
