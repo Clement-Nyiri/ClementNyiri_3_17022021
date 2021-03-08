@@ -30,6 +30,7 @@
         margin:auto;
     }
 
+    /*Style header/nav */
     header
     {
         width: 100%;
@@ -64,6 +65,8 @@
     {
         margin-left: 5%;
     }
+
+    /* Style de la section 1 (titre sur image)*/
     #section_1
     {
         width: 100%;
@@ -100,6 +103,7 @@
         color: black;
     }
 
+    /* animation coeur (label) via checkbox */
     .coeur
     {   
         display: inline;
@@ -112,8 +116,6 @@
         opacity: 0;
         cursor: pointer;
     }
-
-    
 
     @keyframes coeurchecked{
         0%{
@@ -146,14 +148,11 @@
         z-index: 0;
         background: url(images/heart2.png) no-repeat;
     }
+    /* Fin animation du coeur */
 
-    #section_2
-    {
-        margin-top: -40px;
-    }
+   /*GESTION DES SECTIONS DE LA PAGE */
 
-    
-
+    /* Liseret bleu sous le titre */
     .titre_section
     {   
         font-size: 0.9em;
@@ -172,6 +171,16 @@
         }
     }
 
+    /*Réglages des sections */
+    section
+    {
+        margin-bottom: 30px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
     section p
     {
         font-size: 0.85em;
@@ -188,6 +197,7 @@
         margin-left: 3%;
     }
 
+    /* Article = Plat et son animation */
     @keyframes AFF{
         0%{
             transform: translateY(25%);
@@ -249,15 +259,6 @@
         margin-bottom: 5px;
     }
 
-    section
-    {
-        margin-bottom: 30px;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
     .prix
     {   
         width: 50px;
@@ -279,6 +280,7 @@
         opacity: 0;
         transition-delay: 300ms;
     }
+    /* Fin de l'animation des articles */
 
     #section_5
     {
@@ -287,6 +289,7 @@
         margin-bottom: 60px;
     }
 
+    /* Bouton + son hover */
     button
     {   
         font-family: roboto;
@@ -307,6 +310,7 @@
         }
     }
 
+    /*Footer*/
     footer
     {
         display: flex;
@@ -361,6 +365,7 @@
         color: white;
     }
 
+    /* Réglages des lien */
     a{
         text-decoration: none;
         color: black;
@@ -382,7 +387,7 @@
         background-color: #f6f6f6;
     }
 
-    
+    /*Style header/nav TABLETTE */
     header
     {
         width: 100%;
@@ -418,6 +423,7 @@
         margin-left: 0;
     }
 
+    /*Style section 1 (titre sur image) TABLETTE*/
     #section_1
     {
         width: 100%;
@@ -455,6 +461,7 @@
         color: black;
     }
 
+    /* Animation coeur (label/.btn) via checkbox TABLETTE */
     .coeur
     {   
         display: inline;
@@ -467,8 +474,6 @@
         top: 23px;
         opacity: 0;
     }
-
-    
 
     @keyframes coeurchecked{
         0%{
@@ -501,7 +506,9 @@
         z-index: 0;
         background: url(images/heart2.png) no-repeat;
     }
+    /*Fin animation coeur TABLETTE*/
 
+    /* Style des 3 sections contenant les menus TABLETTE*/
     #menus
     {
         display: flex;
@@ -516,11 +523,7 @@
         font-size: 0.9em;
     }
 
-    #section_2
-    {
-        margin-top: -40px;
-    }
-
+    /*liseret bleu sous les titres TABLETTE*/
     .titre_section
     {   
         font-size: 1.1em;
@@ -537,6 +540,17 @@
             width   : 35px;
             border-bottom:3px solid #99E2D0;
         }
+    }
+
+    /*Style des sections TABLETTE*/
+
+    section
+    {
+        margin-bottom: 30px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     section p
@@ -557,6 +571,7 @@
         margin-right: 22%;
     }
 
+    /* Animation des articles TABLETTE*/
     @keyframes AFF{
         0%{
             transform: translateY(25%);
@@ -610,15 +625,6 @@
         margin-left: 27%;
     }
 
-    section
-    {
-        margin-bottom: 30px;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
     .prix
     {   
         margin-top: -8px;
@@ -630,12 +636,14 @@
     {
         display: none;
     }
+    /* Fin animation des articles TABLETTE*/
 
     #section_5
     {
         margin-bottom: 7%;
     }
 
+    /* Style bouton + son hover TABLETTE*/
     button
     {   
         font-family: roboto;
@@ -656,6 +664,7 @@
         }
     }
 
+    /*Footer TABLETTE*/
     footer
     {
         display: flex;
@@ -709,10 +718,13 @@
     {
         font-weight: bold;
     }
+
     #contact a
     {
         color: white;
     }
+
+    /* Style des liens a TABLETTE*/
     a
     {
         text-decoration: none;
@@ -737,7 +749,7 @@
         max-width: 1250px;
     }
 
-    
+    /* Style header/nav PC */
     header
     {
         width: 100%;
@@ -773,6 +785,7 @@
         margin-left: 0;
     }
 
+    /* Style section 1 (texte sur image) PC*/
     #section_1
     {
         width: 100%;
@@ -810,6 +823,7 @@
         color: black;
     }
 
+    /* Animation coeur PC*/
     .coeur
     {   
         display: inline;
@@ -821,8 +835,6 @@
         top: 23px;
         opacity: 0;
     }
-
-    
 
     @keyframes coeurchecked{
         0%{
@@ -855,7 +867,9 @@
         z-index: 0;
         background: url(images/heart2.png) no-repeat;
     }
+    /* Fin animation coeur PC*/
 
+    /*Style des 3 sections de menu PC */
     #menus
     {
         display: flex;
@@ -866,11 +880,7 @@
         margin-bottom: 3%;
     }
 
-    #section_2
-    {
-        margin-top: -40px;
-    }
-
+    /* Liseret bleu PC*/
     .titre_section
     {   
         font-size: 1.1em;
@@ -889,6 +899,16 @@
         }
     }
 
+    /*Style des sections PC*/
+     section
+    {
+        margin-bottom: 30px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
     section p
     {
         font-size: 0.85em;
@@ -905,6 +925,7 @@
         margin-left: 3%;
     }
 
+    /* Animation des articles menus PC*/
     @keyframes AFF{
         0%{
             transform: translateY(25%);
@@ -959,15 +980,6 @@
         margin-left: 35%;
     }
 
-    section
-    {
-        margin-bottom: 30px;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
     .prix
     {   
         margin-top: -8px;
@@ -979,12 +991,14 @@
     {
         display: none;
     }
+    /* Fin animation des articles menu PC*/
     
     #section_5
     {
         margin-bottom: 7%;
     }
 
+    /* Style du bouton + son hover PC*/
     button
     {   
         font-family: roboto;
@@ -1005,6 +1019,7 @@
         }
     }
 
+    /* Footer PC*/
     footer
     {
         display: flex;
@@ -1058,10 +1073,13 @@
     {
         font-weight: bold;
     }
+    
     #contact a
     {
         color: white;
     }   
+
+    /*Style des liens a PC*/
     a{
         text-decoration: none;
         color: black;

@@ -20,7 +20,8 @@
 }
 
 @media all and (min-width: 320px) and (max-width: 767px) /* Version Mobile */
-{
+{	
+	/* animation du loading spinner */
 	@keyframes loader{
 		0%{
 			opacity: 1;
@@ -111,6 +112,7 @@
 	 		transform: translateX(0) rotateZ(0);
 	 	}
 	 }
+	 /* Fin animation loading spinner */
 
 	 @keyframes LS{
 		0%{
@@ -133,7 +135,8 @@
         background-color: white;
     }
 
-	header /* En-tête*/
+    /* En-tête/nav*/
+	header
 	{
 		display: flex;
 		flex-direction: column;
@@ -181,7 +184,8 @@
 		margin-left: -10px;
 	}
 
-	#section_1 /*Section 1*/
+	/*Style section 1 + bouton */
+	#section_1
 	{
 		display: flex;
 		flex-direction: column;
@@ -227,7 +231,8 @@
         }
     }
 
-    #section_2 /*Section 2*/
+    /* Style section 2 (fonctionnement)*/
+    #section_2
     {
     	display: flex;
     	flex-direction: column;
@@ -289,7 +294,8 @@
     	margin-left: -3.5%;
     }
 
-    #section_3 /*Section 3*/
+    /* Style section 3 (restaurants) */
+    #section_3
     {	
     	background-color: #F6F6F6;
     	display: flex;
@@ -346,6 +352,7 @@
 
     }
 
+    /*Etiquette "nouveau" sur image */
 	.etiquette
 	{
 		position: relative;
@@ -363,6 +370,7 @@
 		background-color: #99e2d0;
 	}
 
+	/*Animation coeur*/
     .coeur
     {	
     	display: inline;
@@ -374,8 +382,6 @@
     	bottom: 22%;
     	opacity: 0;
     }
-
-    $btn-coeur-end : linear-gradient(to bottom, rgba(100, 47.5, 85.5, 1),rgba(57.6, 33.7,86.3, 1));
 
     @keyframes coeurchecked{
     	0%{
@@ -408,7 +414,9 @@
     	z-index: 0;
     	background: url(images/heart2.png) no-repeat;
     }
+    /*Fin animation coeur*/
 
+    /*Footer*/
 	footer
     {
         display: flex;
@@ -464,6 +472,7 @@
     	color: white;
     }
 
+    /*Style des liens */
     a
     {
     	text-decoration: none;
@@ -479,6 +488,7 @@
 
 @media all and (min-width: 768px) and (max-width: 1024px) /* Version Tablette */
 {	
+	/* Animation loading spinner TABLETTE*/
 	@keyframes loader{
 		0%{
 			opacity: 1;
@@ -570,6 +580,7 @@
 	 		transform: translateX(0) rotateZ(0);
 	 	}
 	 }
+	/*Fin animation loading spinner */
 
 	@keyframes LS{
 		0%{
@@ -592,7 +603,8 @@
         background-color: white;
     }
 
-	header /* En-tête*/
+    /* En-tête/Nav TABLETTE*/
+	header 
 	{
 		display: flex;
 		flex-direction: column;
@@ -640,7 +652,8 @@
 		margin-left: -10px;
 	}
 
-	#section_1 /*Section 1*/
+	/*Section 1 TABLETTE*/
+	#section_1 
 	{
 		display: flex;
 		flex-direction: column;
@@ -664,6 +677,7 @@
 		color:#656565;
 	}
 
+	/* Style bouton et son hover TABLETTE*/
 	#section_1 button
     {	
     	font-family: roboto;
@@ -686,7 +700,8 @@
         }
     }
 
-    #section_2 /*Section 2*/
+    /*Section 2 TABLETTE*/
+    #section_2
     {
     	display: flex;
     	flex-direction: column;
@@ -748,7 +763,8 @@
     	margin-left: -2.5%;
     }
 
-    #section_3 /*Section 3*/
+    /*Section 3 TABLETTE*/
+    #section_3 
     {	
     	background-color: #F6F6F6;
     	display: flex;
@@ -785,11 +801,6 @@
     	object-fit: cover;
     }
 
-    .nouveaute img
-    {
-    	margin-top: -30px;
-    }
-
     #section_3 h3
     {
     	margin-left: 4%;
@@ -804,6 +815,11 @@
     	margin-left: 4%;
     	font-size: 1em;
     	width: 80%;
+    }
+
+    .nouveaute img
+    {
+    	margin-top: -30px;
     }
 
 	.etiquette
@@ -823,6 +839,7 @@
 		background-color: #99e2d0;
 	}
 
+	/* Animation coeur TABLETTE*/
     .coeur
     {	
     	display: inline;
@@ -866,7 +883,9 @@
     	z-index: 0;
     	background: url(images/heart2.png) no-repeat;
     }
+    /*Fin animation coeur TABLETTE*/
 
+    /*Footer TABLETTE*/
 	footer
     {
         display: flex;
@@ -925,6 +944,7 @@
     	color: white;
     }
 
+    /* Style des liens TABLETTE*/
     a
     {
     	text-decoration: none;
@@ -938,9 +958,9 @@
     }
 }
 
-@media all and (min-width: 1025px) and (max-width: 1919px) /* Version Tablette */
+@media all and (min-width: 1025px) and (max-width: 1919px) /* Version PC */
 {	
-
+	/* Animation loading spinner PC*/
 	@keyframes loader{
 		0%{
 			opacity: 1;
@@ -1031,6 +1051,7 @@
 	 		transform: translateX(0) rotateZ(0);
 	 	}
 	 }
+	/*Fin animation loading spinner PC*/
 
 	@keyframes LS{
 		0%{
@@ -1055,7 +1076,8 @@
         margin:auto;
     }
 
-	header /* En-tête*/
+    /* En-tête/Nav PC*/
+	header 
 	{
 		display: flex;
 		flex-direction: column;
@@ -1103,7 +1125,8 @@
 		margin-left: -10px;
 	}
 
-	#section_1 /*Section 1*/
+	/*Section 1 PC*/
+	#section_1 
 	{
 		display: flex;
 		flex-direction: column;
@@ -1128,6 +1151,7 @@
 		color:#656565;
 	}
 
+	/* Style du bouton + son hover PC*/
 	#section_1 button
     {	
     	font-family: roboto;
@@ -1150,7 +1174,8 @@
         }
     }
 
-    #section_2 /*Section 2*/
+    /*Section 2 PC*/
+    #section_2 
     {
     	display: flex;
     	flex-direction: row;
@@ -1215,7 +1240,8 @@
     	margin-left: -2.5%;
     }
 
-    #section_3 /*Section 3*/
+    /*Section 3 PC*/
+    #section_3 
     {	
     	background-color: #F6F6F6;
     	display: flex;
@@ -1252,12 +1278,7 @@
     	object-fit: cover;
     }
 
-    .nouveaute img
-    {
-    	margin-top: -30px;
-    }
-
-    #section_3 h3
+     #section_3 h3
     {
     	margin-left: 4%;
     	margin-bottom: -12px;
@@ -1271,6 +1292,11 @@
     	margin-left: 4%;
     	font-size: 1em;
     	width: 80%;
+    }
+
+    .nouveaute img
+    {
+    	margin-top: -30px;
     }
 
 	.etiquette
@@ -1290,6 +1316,7 @@
 		background-color: #99e2d0;
 	}
 
+	/* Animation coeur PC*/
     .coeur
     {	
     	display: inline;
@@ -1301,8 +1328,6 @@
     	bottom: 22%;
     	opacity: 0;
     }
-
-    $btn-coeur-end : linear-gradient(to bottom, rgba(100, 47.5, 85.5, 1),rgba(57.6, 33.7,86.3, 1));
 
     @keyframes coeurchecked{
     	0%{
@@ -1335,7 +1360,9 @@
     	z-index: 0;
     	background: url(images/heart2.png) no-repeat;
     }
+    /*Fin animation coeur PC*/
 
+    /* Footer PC*/
 	footer
     {
         display: flex;
@@ -1394,6 +1421,7 @@
     	color: white;
     }
 
+    /*Style des liens PC*/
     a
     {
     	text-decoration: none;

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: roboto;
   src: url(polices/roboto/Roboto-Medium.ttf) format("truetype");
@@ -15,6 +16,7 @@
   src: url(polices/shrikhand/Shrikhand-Regular.otf);
   font-weight: normal; }
 @media all and (min-width: 320px) and (max-width: 767px) {
+  /* animation du loading spinner */
   @keyframes loader {
     0% {
       opacity: 1; }
@@ -73,6 +75,7 @@
       transform: translateX(0) rotateZ(0deg); }
     100% {
       transform: translateX(0) rotateZ(0); } }
+  /* Fin animation loading spinner */
   @keyframes LS {
     0% {
       opacity: 0; }
@@ -88,6 +91,7 @@
     font-family: roboto, 'Trebuchet MS', Arial, sans-serif;
     background-color: white; }
 
+  /* En-tête/nav*/
   header {
     display: flex;
     flex-direction: column;
@@ -124,6 +128,7 @@
   #localisation p {
     margin-left: -10px; }
 
+  /*Style section 1 + bouton */
   #section_1 {
     display: flex;
     flex-direction: column;
@@ -161,6 +166,7 @@
       background: linear-gradient(to bottom right, #ff8ee0, #a05def);
       box-shadow: -3px 8px 10px #747474; }
 
+  /* Style section 2 (fonctionnement)*/
   #section_2 {
     display: flex;
     flex-direction: column;
@@ -209,6 +215,7 @@
     color: white;
     margin-left: -3.5%; }
 
+  /* Style section 3 (restaurants) */
   #section_3 {
     background-color: #F6F6F6;
     display: flex;
@@ -251,6 +258,7 @@
     font-size: 1em;
     width: 80%; }
 
+  /*Etiquette "nouveau" sur image */
   .etiquette {
     position: relative;
     display: flex;
@@ -266,6 +274,7 @@
     color: #008766;
     background-color: #99e2d0; }
 
+  /*Animation coeur*/
   .coeur {
     display: inline;
     height: 32px;
@@ -298,6 +307,8 @@
     z-index: 0;
     background: url(images/heart2.png) no-repeat; }
 
+  /*Fin animation coeur*/
+  /*Footer*/
   footer {
     display: flex;
     flex-direction: column;
@@ -336,6 +347,7 @@
   #contact a {
     color: white; }
 
+  /*Style des liens */
   a {
     text-decoration: none;
     color: black; }
@@ -344,6 +356,7 @@
     text-decoration: none;
     color: black; } }
 @media all and (min-width: 768px) and (max-width: 1024px) {
+  /* Animation loading spinner TABLETTE*/
   @keyframes loader {
     0% {
       opacity: 1; }
@@ -403,6 +416,7 @@
       transform: translateX(0) rotateZ(0deg); }
     100% {
       transform: translateX(0) rotateZ(0); } }
+  /*Fin animation loading spinner */
   @keyframes LS {
     0% {
       opacity: 0; }
@@ -418,6 +432,7 @@
     font-family: roboto, 'Trebuchet MS', Arial, sans-serif;
     background-color: white; }
 
+  /* En-tête/Nav TABLETTE*/
   header {
     display: flex;
     flex-direction: column;
@@ -454,6 +469,7 @@
   #localisation p {
     margin-left: -10px; }
 
+  /*Section 1 TABLETTE*/
   #section_1 {
     display: flex;
     flex-direction: column;
@@ -472,6 +488,7 @@
     font-size: 1em;
     color: #656565; }
 
+  /* Style bouton et son hover TABLETTE*/
   #section_1 button {
     font-family: roboto;
     border-radius: 5em;
@@ -491,6 +508,7 @@
       background: linear-gradient(to bottom right, #ff8ee0, #a05def);
       box-shadow: -3px 8px 10px #747474; }
 
+  /*Section 2 TABLETTE*/
   #section_2 {
     display: flex;
     flex-direction: column;
@@ -539,6 +557,7 @@
     color: white;
     margin-left: -2.5%; }
 
+  /*Section 3 TABLETTE*/
   #section_3 {
     background-color: #F6F6F6;
     display: flex;
@@ -568,9 +587,6 @@
     border-radius: 10px 10px 0 0;
     object-fit: cover; }
 
-  .nouveaute img {
-    margin-top: -30px; }
-
   #section_3 h3 {
     margin-left: 4%;
     margin-bottom: -12px;
@@ -582,6 +598,9 @@
     margin-left: 4%;
     font-size: 1em;
     width: 80%; }
+
+  .nouveaute img {
+    margin-top: -30px; }
 
   .etiquette {
     position: relative;
@@ -598,6 +617,7 @@
     color: #008766;
     background-color: #99e2d0; }
 
+  /* Animation coeur TABLETTE*/
   .coeur {
     display: inline;
     height: 32px;
@@ -630,6 +650,8 @@
     z-index: 0;
     background: url(images/heart2.png) no-repeat; }
 
+  /*Fin animation coeur TABLETTE*/
+  /*Footer TABLETTE*/
   footer {
     display: flex;
     flex-direction: column;
@@ -671,6 +693,7 @@
   #contact a {
     color: white; }
 
+  /* Style des liens TABLETTE*/
   a {
     text-decoration: none;
     color: black; }
@@ -679,6 +702,7 @@
     text-decoration: none;
     color: black; } }
 @media all and (min-width: 1025px) and (max-width: 1919px) {
+  /* Animation loading spinner PC*/
   @keyframes loader {
     0% {
       opacity: 1; }
@@ -737,6 +761,7 @@
       transform: translateX(0) rotateZ(0deg); }
     100% {
       transform: translateX(0) rotateZ(0); } }
+  /*Fin animation loading spinner PC*/
   @keyframes LS {
     0% {
       opacity: 0; }
@@ -754,6 +779,7 @@
     max-width: 1250px;
     margin: auto; }
 
+  /* En-tête/Nav PC*/
   header {
     display: flex;
     flex-direction: column;
@@ -790,6 +816,7 @@
   #localisation p {
     margin-left: -10px; }
 
+  /*Section 1 PC*/
   #section_1 {
     display: flex;
     flex-direction: column;
@@ -809,6 +836,7 @@
     margin-left: 8%;
     color: #656565; }
 
+  /* Style du bouton + son hover PC*/
   #section_1 button {
     font-family: roboto;
     border-radius: 5em;
@@ -828,6 +856,7 @@
       background: linear-gradient(to bottom right, #ff8ee0, #a05def);
       box-shadow: -3px 8px 10px #747474; }
 
+  /*Section 2 PC*/
   #section_2 {
     display: flex;
     flex-direction: row;
@@ -879,6 +908,7 @@
     color: white;
     margin-left: -2.5%; }
 
+  /*Section 3 PC*/
   #section_3 {
     background-color: #F6F6F6;
     display: flex;
@@ -908,9 +938,6 @@
     border-radius: 10px 10px 0 0;
     object-fit: cover; }
 
-  .nouveaute img {
-    margin-top: -30px; }
-
   #section_3 h3 {
     margin-left: 4%;
     margin-bottom: -12px;
@@ -922,6 +949,9 @@
     margin-left: 4%;
     font-size: 1em;
     width: 80%; }
+
+  .nouveaute img {
+    margin-top: -30px; }
 
   .etiquette {
     position: relative;
@@ -938,6 +968,7 @@
     color: #008766;
     background-color: #99e2d0; }
 
+  /* Animation coeur PC*/
   .coeur {
     display: inline;
     height: 32px;
@@ -970,6 +1001,8 @@
     z-index: 0;
     background: url(images/heart2.png) no-repeat; }
 
+  /*Fin animation coeur PC*/
+  /* Footer PC*/
   footer {
     display: flex;
     flex-direction: column;
@@ -1011,6 +1044,7 @@
   #contact a {
     color: white; }
 
+  /*Style des liens PC*/
   a {
     text-decoration: none;
     color: black; }
