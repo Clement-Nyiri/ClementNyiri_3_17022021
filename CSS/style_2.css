@@ -397,6 +397,9 @@
   #menus p {
     font-size: 0.9em; }
 
+  #menus section {
+    height: 545px; }
+
   /*liseret bleu sous les titres TABLETTE*/
   .titre_section {
     font-size: 1.1em;
@@ -422,7 +425,7 @@
     justify-content: space-between; }
 
   section p {
-    font-size: 0.85em;
+    font-size: 0.9em;
     margin-left: 3%;
     margin-right: 20%;
     margin-top: 4px;
@@ -431,9 +434,9 @@
   section h6 {
     font-size: 1em;
     margin-bottom: 0;
-    margin-top: 10px;
+    margin-top: 13px;
     margin-left: 3%;
-    margin-right: 22%; }
+    margin-right: 20%; }
 
   /* Animation des articles TABLETTE*/
   @keyframes AFF {
@@ -442,6 +445,9 @@
     100% {
       transform: translateY(0%); } }
   section article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     animation: AFF 1000ms;
     margin-left: 5%;
     margin-bottom: 5%;
@@ -463,10 +469,10 @@
     font-size: 1.4em;
     color: white;
     background-color: #99E2D0;
-    height: 130px;
+    height: 140px;
     width: 20%;
     left: 100%;
-    bottom: 120px;
+    bottom: 130px;
     margin-bottom: -130px;
     transition: transform 750ms ease-in-out; }
 
@@ -476,7 +482,7 @@
     margin-left: 27%; }
 
   .prix {
-    margin-top: -8px;
+    margin-top: -10px;
     margin-bottom: 2px;
     font-weight: bold; }
 

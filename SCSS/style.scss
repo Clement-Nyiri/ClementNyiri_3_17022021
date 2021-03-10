@@ -42,8 +42,9 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	left: 4%;
+	left: 8%;
 	top: 30%;
+	
 	}
 
 	 #fork
@@ -376,6 +377,7 @@
     	display: inline;
     	height: 32px;
     	width: 40px;
+    	cursor: pointer;
     	z-index:1;
     	position: relative;
     	left: 83.7%;
@@ -486,7 +488,7 @@
     }
 }
 
-@media all and (min-width: 768px) and (max-width: 1024px) /* Version Tablette */
+@media all and (min-width: 768px) and (max-width: 1023px) /* Version Tablette */
 {	
 	/* Animation loading spinner TABLETTE*/
 	@keyframes loader{
@@ -510,7 +512,7 @@
 	align-items: center;
 	justify-content: center;
 	left: 27%;
-	top: 25%;
+	top: 30%;
 	}
 
 	 #fork
@@ -845,6 +847,7 @@
     	display: inline;
     	height: 32px;
     	width: 40px;
+    	cursor: pointer;
     	z-index:1;
     	position: relative;
     	left: 83.7%;
@@ -958,7 +961,7 @@
     }
 }
 
-@media all and (min-width: 1025px) and (max-width: 1919px) /* Version PC */
+@media all and (min-width: 1024px) and (max-width: 1919px) /* Version PC */
 {	
 	/* Animation loading spinner PC*/
 	@keyframes loader{
@@ -981,7 +984,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	left: 40%;
+	left: 32%;
 	top: 40%;
 	}
 
@@ -1322,6 +1325,7 @@
     	display: inline;
     	height: 32px;
     	width: 40px;
+    	cursor: pointer;
     	z-index:1;
     	position: relative;
     	left: 83.7%;

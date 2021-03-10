@@ -32,7 +32,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    left: 4%;
+    left: 8%;
     top: 30%; }
 
   #fork {
@@ -279,6 +279,7 @@
     display: inline;
     height: 32px;
     width: 40px;
+    cursor: pointer;
     z-index: 1;
     position: relative;
     left: 83.7%;
@@ -355,7 +356,7 @@
   a:visited {
     text-decoration: none;
     color: black; } }
-@media all and (min-width: 768px) and (max-width: 1024px) {
+@media all and (min-width: 768px) and (max-width: 1023px) {
   /* Animation loading spinner TABLETTE*/
   @keyframes loader {
     0% {
@@ -373,7 +374,7 @@
     align-items: center;
     justify-content: center;
     left: 27%;
-    top: 25%; }
+    top: 30%; }
 
   #fork {
     height: 150px;
@@ -622,6 +623,7 @@
     display: inline;
     height: 32px;
     width: 40px;
+    cursor: pointer;
     z-index: 1;
     position: relative;
     left: 83.7%;
@@ -701,7 +703,7 @@
   a:visited {
     text-decoration: none;
     color: black; } }
-@media all and (min-width: 1025px) and (max-width: 1919px) {
+@media all and (min-width: 1024px) and (max-width: 1919px) {
   /* Animation loading spinner PC*/
   @keyframes loader {
     0% {
@@ -718,7 +720,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    left: 40%;
+    left: 32%;
     top: 40%; }
 
   #fork {
@@ -973,6 +975,7 @@
     display: inline;
     height: 32px;
     width: 40px;
+    cursor: pointer;
     z-index: 1;
     position: relative;
     left: 83.7%;
