@@ -372,7 +372,7 @@
 	}
 
 	/*Animation coeur*/
-    .coeur
+    #coeur1, #coeur2, #coeur3, #coeur4
     {	
     	display: inline;
     	height: 32px;
@@ -400,9 +400,24 @@
     	}
     }
 
-    .coeur:checked + label
+    #coeur1:checked + label
     {
-    	animation: coeurchecked 1000ms forwards;
+    	animation: coeurchecked 1000ms;
+    }
+
+    #coeur2:checked + label
+    {
+    	animation: coeurchecked 1000ms;
+    }
+
+    #coeur3:checked + label
+    {
+    	animation: coeurchecked 1000ms;
+    }
+
+    #coeur4:checked + label
+    {
+    	animation: coeurchecked 1000ms;
     }
 
     .btn
