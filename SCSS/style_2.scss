@@ -464,7 +464,7 @@
     }
 
     /* Animation coeur (label/.btn) via checkbox TABLETTE */
-    .coeur
+    #coeur
     {   
         display: inline;
         height: 32px;
@@ -492,7 +492,7 @@
         }
     }
 
-    .coeur:checked + label
+    #coeur:checked + label
     {
         animation: coeurchecked 1000ms forwards;
     }
@@ -834,7 +834,7 @@
     }
 
     /* Animation coeur PC*/
-    .coeur
+    #coeur
     {   
         display: inline;
         height: 32px;
@@ -861,7 +861,7 @@
         }
     }
 
-    .coeur:checked + label
+    #coeur:checked + label
     {
         animation: coeurchecked 1000ms forwards;
     }

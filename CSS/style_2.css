@@ -354,7 +354,7 @@
     color: black; }
 
   /* Animation coeur (label/.btn) via checkbox TABLETTE */
-  .coeur {
+  #coeur {
     display: inline;
     height: 32px;
     width: 40px;
@@ -374,7 +374,7 @@
     100% {
       background: url(images/heart3.png) no-repeat;
       opacity: 1; } }
-  .coeur:checked + label {
+  #coeur:checked + label {
     animation: coeurchecked 1000ms forwards; }
 
   .btn {
@@ -631,7 +631,7 @@
     color: black; }
 
   /* Animation coeur PC*/
-  .coeur {
+  #coeur {
     display: inline;
     height: 32px;
     width: 40px;
@@ -650,7 +650,7 @@
     100% {
       background: url(images/heart3.png) no-repeat;
       opacity: 1; } }
-  .coeur:checked + label {
+  #coeur:checked + label {
     animation: coeurchecked 1000ms forwards; }
 
   .btn {

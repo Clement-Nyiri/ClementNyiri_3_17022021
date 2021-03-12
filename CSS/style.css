@@ -628,7 +628,8 @@
     background-color: #99e2d0; }
 
   /* Animation coeur TABLETTE*/
-  .coeur {
+  /*Animation coeur*/
+  #coeur1, #coeur2, #coeur3, #coeur4 {
     display: inline;
     height: 32px;
     width: 40px;
@@ -648,8 +649,17 @@
     100% {
       background: url(images/heart3.png) no-repeat;
       opacity: 1; } }
-  .coeur:checked + label {
-    animation: coeurchecked 1000ms forwards; }
+  #coeur1:checked + label {
+    animation: coeurchecked 1000ms; }
+
+  #coeur2:checked + label {
+    animation: coeurchecked 1000ms; }
+
+  #coeur3:checked + label {
+    animation: coeurchecked 1000ms; }
+
+  #coeur4:checked + label {
+    animation: coeurchecked 1000ms; }
 
   .btn {
     display: block;
@@ -980,7 +990,8 @@
     background-color: #99e2d0; }
 
   /* Animation coeur PC*/
-  .coeur {
+  /*Animation coeur*/
+  #coeur1, #coeur2, #coeur3, #coeur4 {
     display: inline;
     height: 32px;
     width: 40px;
@@ -1000,8 +1011,17 @@
     100% {
       background: url(images/heart3.png) no-repeat;
       opacity: 1; } }
-  .coeur:checked + label {
-    animation: coeurchecked 1000ms forwards; }
+  #coeur1:checked + label {
+    animation: coeurchecked 1000ms; }
+
+  #coeur2:checked + label {
+    animation: coeurchecked 1000ms; }
+
+  #coeur3:checked + label {
+    animation: coeurchecked 1000ms; }
+
+  #coeur4:checked + label {
+    animation: coeurchecked 1000ms; }
 
   .btn {
     display: block;

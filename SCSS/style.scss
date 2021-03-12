@@ -857,38 +857,55 @@
 	}
 
 	/* Animation coeur TABLETTE*/
-    .coeur
-    {	
-    	display: inline;
-    	height: 32px;
-    	width: 40px;
-    	cursor: pointer;
-    	z-index:1;
-    	position: relative;
-    	left: 83.7%;
-    	bottom: 22%;
-    	opacity: 0;
+    /*Animation coeur*/
+    #coeur1, #coeur2, #coeur3, #coeur4
+    {   
+        display: inline;
+        height: 32px;
+        width: 40px;
+        cursor: pointer;
+        z-index:1;
+        position: relative;
+        left: 83.7%;
+        bottom: 22%;
+        opacity: 0;
     }
 
     @keyframes coeurchecked{
-    	0%{
-    		background: url(images/heart2.png) no-repeat;
-    		opacity: 1;
-    	}
+        0%{
+            background: url(images/heart2.png) no-repeat;
+            opacity: 1;
+        }
 
-    	25%{
-    		opacity:0;
-    	}
-    	100%{
-    		background: url(images/heart3.png) no-repeat;
-    		opacity:1;
-    	}
+        25%{
+            opacity:0;
+        }
+        100%{
+            background: url(images/heart3.png) no-repeat;
+            opacity:1;
+        }
     }
 
-    .coeur:checked + label
+    #coeur1:checked + label
     {
-    	animation: coeurchecked 1000ms forwards;
+        animation: coeurchecked 1000ms;
     }
+
+    #coeur2:checked + label
+    {
+        animation: coeurchecked 1000ms;
+    }
+
+    #coeur3:checked + label
+    {
+        animation: coeurchecked 1000ms;
+    }
+
+    #coeur4:checked + label
+    {
+        animation: coeurchecked 1000ms;
+    }
+
 
     .btn
     {	
@@ -1335,38 +1352,55 @@
 	}
 
 	/* Animation coeur PC*/
-    .coeur
-    {	
-    	display: inline;
-    	height: 32px;
-    	width: 40px;
-    	cursor: pointer;
-    	z-index:1;
-    	position: relative;
-    	left: 83.7%;
-    	bottom: 22%;
-    	opacity: 0;
+    /*Animation coeur*/
+    #coeur1, #coeur2, #coeur3, #coeur4
+    {   
+        display: inline;
+        height: 32px;
+        width: 40px;
+        cursor: pointer;
+        z-index:1;
+        position: relative;
+        left: 83.7%;
+        bottom: 22%;
+        opacity: 0;
     }
 
     @keyframes coeurchecked{
-    	0%{
-    		background: url(images/heart2.png) no-repeat;
-    		opacity: 1;
-    	}
+        0%{
+            background: url(images/heart2.png) no-repeat;
+            opacity: 1;
+        }
 
-    	25%{
-    		opacity:0;
-    	}
-    	100%{
-    		background: url(images/heart3.png) no-repeat;
-    		opacity:1;
-    	}
+        25%{
+            opacity:0;
+        }
+        100%{
+            background: url(images/heart3.png) no-repeat;
+            opacity:1;
+        }
     }
 
-    .coeur:checked + label
+    #coeur1:checked + label
     {
-    	animation: coeurchecked 1000ms forwards;
+        animation: coeurchecked 1000ms;
     }
+
+    #coeur2:checked + label
+    {
+        animation: coeurchecked 1000ms;
+    }
+
+    #coeur3:checked + label
+    {
+        animation: coeurchecked 1000ms;
+    }
+
+    #coeur4:checked + label
+    {
+        animation: coeurchecked 1000ms;
+    }
+
 
     .btn
     {	
