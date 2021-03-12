@@ -1011,19 +1011,19 @@
     100% {
       background: url(images/heart3.png) no-repeat;
       opacity: 1; } }
-  #coeur1:checked + label {
-    animation: coeurchecked 1000ms; }
+  #coeur1:checked + .btn1 {
+    animation: coeurchecked 1000ms forwards; }
 
-  #coeur2:checked + label {
-    animation: coeurchecked 1000ms; }
+  #coeur2:checked + .btn2 {
+    animation: coeurchecked 1000ms forwards; }
 
-  #coeur3:checked + label {
-    animation: coeurchecked 1000ms; }
+  #coeur3:checked + .btn3 {
+    animation: coeurchecked 1000ms forwards; }
 
-  #coeur4:checked + label {
-    animation: coeurchecked 1000ms; }
+  #coeur4:checked + .btn4 {
+    animation: coeurchecked 1000ms forwards; }
 
-  .btn {
+  .btn1, .btn2, .btn3, .btn4 {
     display: block;
     position: relative;
     width: 35px;

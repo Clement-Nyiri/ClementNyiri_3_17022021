@@ -1381,28 +1381,28 @@
         }
     }
 
-    #coeur1:checked + label
+    #coeur1:checked + .btn1
     {
-        animation: coeurchecked 1000ms;
+        animation: coeurchecked 1000ms forwards;
     }
 
-    #coeur2:checked + label
+    #coeur2:checked + .btn2
     {
-        animation: coeurchecked 1000ms;
+        animation: coeurchecked 1000ms forwards;
     }
 
-    #coeur3:checked + label
+    #coeur3:checked + .btn3
     {
-        animation: coeurchecked 1000ms;
+        animation: coeurchecked 1000ms forwards;
     }
 
-    #coeur4:checked + label
+    #coeur4:checked + .btn4
     {
-        animation: coeurchecked 1000ms;
+        animation: coeurchecked 1000ms forwards;
     }
 
 
-    .btn
+    .btn1, .btn2, .btn3, .btn4
     {	
     	display: block;
     	position: relative;
