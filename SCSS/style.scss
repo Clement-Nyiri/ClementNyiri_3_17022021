@@ -865,10 +865,10 @@
         width: 40px;
         cursor: pointer;
         z-index:1;
-        position: absolute;
+        position: relative;
         left: 83.7%;
         bottom: 22%;
-        opacity: 1;
+        opacity: 0;
     }
 
     @keyframes coeurchecked{
@@ -913,7 +913,7 @@
     	position: relative;
     	width: 35px;
     	height: 45px;
-    	bottom: 22%;
+    	bottom: 37%;
     	left:84.5%;
     	z-index: 0;
     	background: url(images/heart2.png) no-repeat;
