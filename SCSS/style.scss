@@ -30,28 +30,33 @@
 			opacity: 1;
 		}
 		100%{
-            visibility: hidden;
+            visibility:hidden;
 		}
 	}
 
 	#loader {
 	animation: loader 2200ms forwards;
-	position: absolute;
+	position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 150px;
+    width: 240px;
+    margin-top: -75px;
+    margin-left: -120px;
 	font-family: shrikhand;
 	font-size: 1.2em;
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	left: 8%;
-	top: 30%;
+	justify-content: flex-start;
+    z-index: 2;
 	}
 
 	 #fork
 	 {
 	 	height: 150px;
 	 	width: 22.1px;
-	 	margin-right: 2%;
-	 	margin-left: 5%;
+	 	margin-right: 4%;
+	 	margin-left: 0;
 	 	animation: fork 2000ms;
 	 }
 
@@ -66,14 +71,15 @@
 	 #plate
 	 {
 	 	z-index: 0;
-	 	margin-left: 5%;
+	 	margin-left: 0;
 
 	 }
 
 	 #loader p
 	 {
 	 	z-index: 1;
-	 	margin-left: -43%;
+	 	margin-left: -55%;
+        margin-top: 10%;
 	 	color: #99E2D0;
 	 }
 
@@ -135,7 +141,7 @@
         background-color: white;
     }
 
-    /* En-tête/nav*/
+    /* En-tête/nav */
 	header
 	{
 		display: flex;
@@ -515,60 +521,65 @@
 {	
 	/* Animation loading spinner TABLETTE*/
 	@keyframes loader{
-		0%{
-			opacity: 1;
-		}
-		90%{
-			opacity: 1;
-		}
-		100%{
-			visibility: hidden;
-		}
-	}
+        0%{
+            opacity: 1;
+        }
+        90%{
+            opacity: 1;
+        }
+        100%{
+            visibility:hidden;
+        }
+    }
 
-	#loader {
-	animation: loader 2200ms forwards;
-	position: absolute;
-	font-family: shrikhand;
-	font-size: 1.2em;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	left: 27%;
-	top: 30%;
-	}
+    #loader {
+    animation: loader 2200ms forwards;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 150px;
+    width: 240px;
+    margin-top: -75px;
+    margin-left: -120px;
+    font-family: shrikhand;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 2;
+    }
 
-	 #fork
-	 {
-	 	height: 150px;
-	 	width: 22.1px;
-	 	margin-right: 2%;
-	 	margin-left: 5%;
-	 	animation: fork 2000ms;
-	 }
+     #fork
+     {
+        height: 150px;
+        width: 22.1px;
+        margin-right: 4%;
+        margin-left: 0;
+        animation: fork 2000ms;
+     }
 
-	 #knife
-	 {
-	 	height: 150px;
-	 	width: 22.1px;
-	 	margin-left: 15%;
-	 	animation: knife 2000ms forwards;
-	 }
+     #knife
+     {
+        height: 150px;
+        width: 22.1px;
+        margin-left: 15%;
+        animation: knife 2000ms forwards;
+     }
 
-	 #plate
-	 {
-	 	z-index: 0;
-	 	margin-left: 5%;
+     #plate
+     {
+        z-index: 0;
+        margin-left: 0;
 
-	 }
+     }
 
-	 #loader p
-	 {
-	 	z-index: 1;
-	 	margin-left: -43%;
-	 	color: #99E2D0;
-	 	animation: OMF 1800ms;
-	 }
+     #loader p
+     {
+        z-index: 1;
+        margin-left: -55%;
+        margin-top: 10%;
+        color: #99E2D0;
+     }
 
 	 @keyframes fork{
 	 	0%{
@@ -866,7 +877,6 @@
 	}
 
 	/* Animation coeur TABLETTE*/
-    /*Animation coeur*/
     #coeur1, #coeur2, #coeur3, #coeur4
     {   
         display: inline;
@@ -1006,59 +1016,65 @@
 {	
 	/* Animation loading spinner PC*/
 	@keyframes loader{
-		0%{
-			opacity: 1;
-		}
-		90%{
-			opacity: 1;
-		}
-		100%{
-			visibility: hidden;
-		}
-	}
+        0%{
+            opacity: 1;
+        }
+        90%{
+            opacity: 1;
+        }
+        100%{
+            visibility:hidden;
+        }
+    }
 
-	#loader {
-	animation: loader 2200ms forwards;
-	position: absolute;
-	font-family: shrikhand;
-	font-size: 1.2em;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	left: 32%;
-	top: 40%;
-	}
+    #loader {
+    animation: loader 2200ms forwards;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 150px;
+    width: 240px;
+    margin-top: -75px;
+    margin-left: -120px;
+    font-family: shrikhand;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 2;
+    }
 
-	 #fork
-	 {
-	 	height: 150px;
-	 	width: 22.1px;
-	 	margin-right: 2%;
-	 	margin-left: 5%;
-	 	animation: fork 2000ms;
-	 }
+     #fork
+     {
+        height: 150px;
+        width: 22.1px;
+        margin-right: 4%;
+        margin-left: 0;
+        animation: fork 2000ms;
+     }
 
-	 #knife
-	 {
-	 	height: 150px;
-	 	width: 22.1px;
-	 	margin-left: 15%;
-	 	animation: knife 2000ms forwards;
-	 }
+     #knife
+     {
+        height: 150px;
+        width: 22.1px;
+        margin-left: 15%;
+        animation: knife 2000ms forwards;
+     }
 
-	 #plate
-	 {
-	 	z-index: 0;
-	 	margin-left: 5%;
+     #plate
+     {
+        z-index: 0;
+        margin-left: 0;
 
-	 }
+     }
 
-	 #loader p
-	 {
-	 	z-index: 1;
-	 	margin-left: -43%;
-	 	color: #99E2D0;
-	 }
+     #loader p
+     {
+        z-index: 1;
+        margin-left: -55%;
+        margin-top: 10%;
+        color: #99E2D0;
+     }
 
 	 @keyframes fork{
 	 	0%{
@@ -1362,7 +1378,6 @@
 	}
 
 	/* Animation coeur PC*/
-    /*Animation coeur*/
     #coeur1, #coeur2, #coeur3, #coeur4
     {   
         display: inline;
@@ -1498,8 +1513,9 @@
     }
 }
 
-@media all and (min-width: 1920px){
-    /* Animation loading spinner PC*/
+@media all and (min-width: 1920px) /* Version Très Grande */
+{
+    /* Animation loading spinner TG*/
     @keyframes loader{
         0%{
             opacity: 1;
@@ -1508,28 +1524,33 @@
             opacity: 1;
         }
         100%{
-            visibility: hidden;
+            visibility:hidden;
         }
     }
 
     #loader {
     animation: loader 2200ms forwards;
-    position: absolute;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 150px;
+    width: 240px;
+    margin-top: -75px;
+    margin-left: -120px;
     font-family: shrikhand;
     font-size: 1.2em;
     display: flex;
     align-items: center;
-    justify-content: center;
-    left: 32%;
-    top: 40%;
+    justify-content: flex-start;
+    z-index: 2;
     }
 
      #fork
      {
         height: 150px;
         width: 22.1px;
-        margin-right: 2%;
-        margin-left: 5%;
+        margin-right: 4%;
+        margin-left: 0;
         animation: fork 2000ms;
      }
 
@@ -1544,14 +1565,15 @@
      #plate
      {
         z-index: 0;
-        margin-left: 5%;
+        margin-left: 0;
 
      }
 
      #loader p
      {
         z-index: 1;
-        margin-left: -43%;
+        margin-left: -55%;
+        margin-top: 10%;
         color: #99E2D0;
      }
 
@@ -1590,7 +1612,7 @@
             transform: translateX(0) rotateZ(0);
         }
      }
-    /*Fin animation loading spinner PC*/
+    /*Fin animation loading spinner TG*/
 
     @keyframes LS{
         0%{
@@ -1615,7 +1637,7 @@
         margin:auto;
     }
 
-    /* En-tête/Nav PC*/
+    /* En-tête/Nav TG*/
     header 
     {
         display: flex;
@@ -1664,7 +1686,7 @@
         margin-left: -10px;
     }
 
-    /*Section 1 PC*/
+    /*Section 1 TG*/
     #section_1 
     {
         display: flex;
@@ -1690,7 +1712,7 @@
         color:#656565;
     }
 
-    /* Style du bouton + son hover PC*/
+    /* Style du bouton + son hover TG*/
     #section_1 button
     {   
         font-family: roboto;
@@ -1714,7 +1736,7 @@
         }
     }
 
-    /*Section 2 PC*/
+    /*Section 2 TG*/
     #section_2 
     {
         display: flex;
@@ -1780,7 +1802,7 @@
         margin-left: -2.5%;
     }
 
-    /*Section 3 PC*/
+    /*Section 3 TG*/
     #section_3 
     {   
         background-color: #F6F6F6;
@@ -1856,8 +1878,7 @@
         background-color: #99e2d0;
     }
 
-    /* Animation coeur PC*/
-    /*Animation coeur*/
+    /* Animation coeur TG*/
     #coeur1, #coeur2, #coeur3, #coeur4
     {   
         display: inline;
@@ -1918,9 +1939,9 @@
         z-index: 0;
         background: url(images/heart2.png) no-repeat;
     }
-    /*Fin animation coeur PC*/
+    /*Fin animation coeur TG*/
 
-    /* Footer PC*/
+    /* Footer TG*/
     footer
     {
         display: flex;
@@ -1979,7 +2000,7 @@
         color: white;
     }
 
-    /*Style des liens PC*/
+    /*Style des liens TG*/
     a
     {
         text-decoration: none;

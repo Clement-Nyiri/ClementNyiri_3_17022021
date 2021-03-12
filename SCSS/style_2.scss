@@ -19,7 +19,7 @@
     font-weight: normal
 }
 
-@media all and (min-width: 320px) and (max-width: 767px)
+@media all and (min-width: 320px) and (max-width: 767px) /* Version Mobile */
 {
     #bloc_page{
         display: flex;
@@ -384,7 +384,7 @@
     }
 }
 
-@media all and (min-width: 768px) and (max-width: 1023px)
+@media all and (min-width: 768px) and (max-width: 1023px) /* Version Tablette */
 {
     #bloc_page{
         display: flex;
@@ -758,7 +758,7 @@
     }
 }
 
-@media all and (min-width: 1024px) and (max-width: 1919px)
+@media all and (min-width: 1024px) and (max-width: 1919px) /* Version PC */
 {
     #bloc_page{
         display: flex;
@@ -1118,7 +1118,8 @@
     }
 }
 
-@media all and (min-width: 1920px){
+@media all and (min-width: 1920px) /* Version Très Grande */
+{
 
     #bloc_page{
         display: flex;
