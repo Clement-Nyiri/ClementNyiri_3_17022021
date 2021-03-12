@@ -295,19 +295,19 @@
     100% {
       background: url(images/heart3.png) no-repeat;
       opacity: 1; } }
-  #coeur1:checked + label {
-    animation: coeurchecked 1000ms; }
+  #coeur1:checked + .btn1 {
+    animation: coeurchecked 1000ms forwards; }
 
-  #coeur2:checked + label {
-    animation: coeurchecked 1000ms; }
+  #coeur2:checked + .btn2 {
+    animation: coeurchecked 1000ms forwards; }
 
-  #coeur3:checked + label {
-    animation: coeurchecked 1000ms; }
+  #coeur3:checked + .btn3 {
+    animation: coeurchecked 1000ms forwards; }
 
-  #coeur4:checked + label {
-    animation: coeurchecked 1000ms; }
+  #coeur4:checked + .btn4 {
+    animation: coeurchecked 1000ms forwards; }
 
-  .btn {
+  .btn1, .btn2, .btn3, .btn4 {
     display: block;
     position: relative;
     width: 35px;
@@ -635,10 +635,10 @@
     width: 40px;
     cursor: pointer;
     z-index: 1;
-    position: relative;
+    position: absolute;
     left: 83.7%;
     bottom: 22%;
-    opacity: 0; }
+    opacity: 1; }
 
   @keyframes coeurchecked {
     0% {
@@ -649,24 +649,24 @@
     100% {
       background: url(images/heart3.png) no-repeat;
       opacity: 1; } }
-  #coeur1:checked + label {
-    animation: coeurchecked 1000ms; }
+  #coeur1:checked + .btn1 {
+    animation: coeurchecked 1000ms forwards; }
 
-  #coeur2:checked + label {
-    animation: coeurchecked 1000ms; }
+  #coeur2:checked + .btn2 {
+    animation: coeurchecked 1000ms forwards; }
 
-  #coeur3:checked + label {
-    animation: coeurchecked 1000ms; }
+  #coeur3:checked + .btn3 {
+    animation: coeurchecked 1000ms forwards; }
 
-  #coeur4:checked + label {
-    animation: coeurchecked 1000ms; }
+  #coeur4:checked + .btn4 {
+    animation: coeurchecked 1000ms forwards; }
 
-  .btn {
+  .btn1, .btn2, .btn3, .btn4 {
     display: block;
     position: relative;
     width: 35px;
     height: 45px;
-    bottom: 37%;
+    bottom: 22%;
     left: 84.5%;
     z-index: 0;
     background: url(images/heart2.png) no-repeat; }
