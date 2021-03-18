@@ -147,7 +147,8 @@
     font-size: 0.85em;
     margin-left: 3%;
     margin-top: 4px;
-    color: #3D3D3D; }
+    color: #3D3D3D;
+    text-overflow: ellipsis; }
 
   section h6 {
     font-size: 1em;
@@ -173,16 +174,24 @@
     border-radius: 0.75em;
     background-color: white;
     box-shadow: -5px 5px 5px #e7e7e7;
-    overflow: hidden; }
+    overflow: hidden;
+    text-overflow: ellipsis;
+    z-index: 2; }
     section article:hover .valide {
       transform: translateX(-100%); }
     section article:hover .fa-check-circle {
       transform: rotateZ(360deg); }
     section article:hover .prix {
-      transform: translateX(-100%); }
-    section article:hover .anim {
-      transform: translateX(-100%);
-      opacity: 1; }
+      transform: translateX(-120%); }
+    section article:hover .description {
+      width: 68%; }
+
+  .description {
+    transition: width 750ms;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 80%; }
 
   .valide {
     position: relative;
@@ -197,22 +206,23 @@
     left: 100%;
     bottom: 70px;
     margin-bottom: -85px;
-    transition: transform 750ms ease-in-out; }
+    transition: transform 750ms ease-in-out;
+    z-index: 2; }
 
   .fa-check-circle {
     transition: transform 750ms ease-in-out;
     margin-bottom: 5px; }
 
   .prix {
-    width: 60px;
+    width: 30px;
     background-color: white;
-    font-size: 0.8em;
+    font-size: 0.85em;
     font-weight: bold;
-    margin-left: 80%;
-    margin-top: -28px;
+    margin-left: 85%;
+    margin-top: -29.5px;
     margin-right: 0;
     right: 5px;
-    text-align: right;
+    text-align: center;
     position: relative;
     transition: all 750ms ease-in-out; }
 
@@ -918,6 +928,16 @@
     top: 23px;
     opacity: 0; }
 
+  .btn {
+    display: block;
+    position: absolute;
+    width: 35px;
+    height: 45px;
+    right: 38px;
+    top: 25px;
+    z-index: 0;
+    background: url(images/heart2.png) no-repeat; }
+
   @keyframes coeurchecked {
     0% {
       background: url(images/heart2.png) no-repeat;
@@ -929,16 +949,6 @@
       opacity: 1; } }
   #coeur:checked + label {
     animation: coeurchecked 1000ms forwards; }
-
-  .btn {
-    display: block;
-    position: absolute;
-    width: 35px;
-    height: 45px;
-    right: 38px;
-    top: 25px;
-    z-index: 0;
-    background: url(images/heart2.png) no-repeat; }
 
   /* Fin animation coeur TG*/
   /*Style des 3 sections de menu TG */
