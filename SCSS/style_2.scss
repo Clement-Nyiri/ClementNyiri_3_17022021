@@ -296,12 +296,6 @@
         transition: all 750ms ease-in-out;
     }
 
-    .anim
-    {
-        margin-right: 26px;
-        opacity: 0;
-        transition-delay: 300ms;
-    }
     /* Fin de l'animation des articles */
 
     #section_5
@@ -584,6 +578,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        padding-top: 8%;
     }
 
     section p
@@ -628,7 +623,7 @@
         border: 0px black solid;
         border-radius: 0.75em;
         background-color: white;
-        box-shadow: -5px 5px 5px #e7e7e7;
+        box-shadow: -5px 5px 5px #ADADAD;
         overflow: hidden;
         &:hover{
             .valide{
@@ -668,10 +663,6 @@
         font-weight: bold;
     }
 
-    .anim
-    {
-        display: none;
-    }
     /* Fin animation des articles TABLETTE*/
 
     #section_5
@@ -988,11 +979,11 @@
         border: 0px black solid;
         border-radius: 0.75em;
         background-color: white;
-        box-shadow: -5px 5px 5px #e7e7e7;
+        box-shadow: -5px 5px 5px #ADADAD;
         overflow: hidden;
         &:hover{
             .valide{
-            transform: translateX(-100%)
+                transform: translateX(-100%)
             }
             .fa-check-circle{
                 transform: rotateZ(360deg);
@@ -1019,7 +1010,7 @@
     {
         transition: transform 750ms ease-in-out;
         margin-top: 45px;
-        margin-left: 25%;
+        margin-left: 32%;
     }
 
     .prix
@@ -1029,10 +1020,7 @@
         font-weight: bold;
     }
 
-    .anim
-    {
-        display: none;
-    }
+    
     /* Fin animation des articles menu PC*/
     
     #section_5
@@ -1392,10 +1380,6 @@
         font-weight: bold;
     }
 
-    .anim
-    {
-        display: none;
-    }
     /* Fin animation des articles menu TG*/
     
     #section_5
