@@ -9,14 +9,9 @@
     font-weight: bold;
 }
 @font-face{
-    font-family: roboto;
-    src: url(polices/roboto/Roboto-Light.ttf) format('truetype');
-    font-weight: lighter;
-}
-@font-face{
     font-family: shrikhand;
     src: url(polices/shrikhand/Shrikhand-Regular.otf);
-    font-weight: normal
+    font-weight: normal;
 }
 
 @media all and (min-width: 320px) and (max-width: 767px) /* Version Mobile */
@@ -535,7 +530,7 @@
     {
         display: flex;
         flex-direction: row;
-        flex-direction: space-around;
+        justify-content: space-around;
         align-items: flex-start;
         margin-bottom: 3%;
     }
@@ -907,7 +902,7 @@
     {
         display: flex;
         flex-direction: row;
-        flex-direction: space-around;
+        justify-content: space-around;
         align-items: flex-start;
 
         margin-bottom: 3%;
@@ -1267,7 +1262,7 @@
     {
         display: flex;
         flex-direction: row;
-        flex-direction: space-around;
+        justify-content: space-around;
         align-items: flex-start;
 
         margin-bottom: 3%;
